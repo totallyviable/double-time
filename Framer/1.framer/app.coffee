@@ -73,10 +73,21 @@ timers = {
 	bottom: {
 		textLayer: bottomText
 		progressLayer: bottomProgress
-		time: 3
+		time: 30
 		current_time: 0
 	}
 }
+
+ff_seconds = (bar) ->
+	num = 0
+	
+	ff_interval = Utils.interval 0.024, ->
+		num += Math.ceil(timers[bar].time / 24)
+		update_time_text(bar, num)
+		
+		if num >= timers[bar].time
+			clearInterval(ff_interval)
+	
 
 format_seconds = (seconds) ->
 	hours = Math.floor(seconds / 3600)
@@ -108,10 +119,16 @@ animate_bar = (bar, callback) ->
 	
 	timers[bar].current_time = timers[bar].time;
 	update_time_text(bar, timers[bar].time)
-		
+	
 	barLayer.props =
 		opacity: 1
 		width: 0
+	
+	timers[bar].textLayer.animate
+			time: 0.3
+			curve: "linear"
+			properties:
+				color: "#fff"
 	
 	barAnimation = barLayer.animate
 		time: timers[bar].time
@@ -131,7 +148,17 @@ animate_bar = (bar, callback) ->
 				opacity: 0
 		
 		clearInterval(time_interval)
-		update_time_text(bar, timers[bar].time)
+
+		ff_seconds(bar)
+		
+# 		Utils.delay 0.8, ->
+# 			update_time_text(bar, timers[bar].time)
+		
+		timers[bar].textLayer.animate
+			time: 0.3
+			curve: "linear"
+			properties:
+				color: "#79756a"
 		
 		callback()
 
@@ -149,6 +176,5 @@ init = ->
 	update_time_text("bottom", timers["bottom"].time)
 	
 	run "top"
-
 
 init()
