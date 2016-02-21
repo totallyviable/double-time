@@ -96,7 +96,7 @@ format_seconds = (seconds) ->
 	return [hours, minutes, seconds]
 
 update_time_text = (bar, time = null) ->
-	if (! time) 
+	if (time == null) 
 		time = timers[bar].current_time
 	
 	value = format_seconds(time).join("<span style='vertical-align:7px'>:</span>")
@@ -108,16 +108,7 @@ animate_bar = (bar, callback) ->
 	
 	timers[bar].current_time = timers[bar].time;
 	update_time_text(bar, timers[bar].time)
-	
-	timers[bar].textLayer.y += 30
-	timers[bar].textLayer.opacity = 0
 		
-	timers[bar].textLayer.animate
-		curve: "spring(300, 25, 0)"
-		properties: 
-			opacity: 1
-			y: timers[bar].textLayer.y - 30
-	
 	barLayer.props =
 		opacity: 1
 		width: 0
@@ -138,14 +129,9 @@ animate_bar = (bar, callback) ->
 			curve: "linear"
 			properties:
 				opacity: 0
-
-		timers[bar].textLayer.animate
-			time: 0.3
-			curve: "linear"
-			properties:
-				opacity: 0
 		
 		clearInterval(time_interval)
+		update_time_text(bar, timers[bar].time)
 		
 		callback()
 
@@ -158,4 +144,11 @@ run = (bar) ->
 		animate_bar bar, ->
 			run("top")
 
-run "top"
+init = ->
+	update_time_text("top", timers["top"].time)
+	update_time_text("bottom", timers["bottom"].time)
+	
+	run "top"
+
+
+init()
