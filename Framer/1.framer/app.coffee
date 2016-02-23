@@ -1,3 +1,5 @@
+{AudioPlayer} = require "audio"
+
 Framer.Device.background.backgroundColor = "#303138"
 
 master = new Layer
@@ -64,6 +66,7 @@ bottomText.center()
 
 timers = {
 	top: {
+		audio: new AudioPlayer audio: "audio/doubletime-timer-b.wav"
 		textLayer: topText
 		progressLayer: topProgress
 		time: 5
@@ -71,9 +74,10 @@ timers = {
 	}
 	
 	bottom: {
+		audio: new AudioPlayer audio: "audio/doubletime-timer-a.wav"
 		textLayer: bottomText
 		progressLayer: bottomProgress
-		time: 30
+		time: 3
 		current_time: 0
 	}
 }
@@ -141,6 +145,8 @@ animate_bar = (bar, callback) ->
 		update_time_text(bar)
 	
 	barAnimation.on Events.AnimationEnd, ->
+		timers[bar].audio.player.play()
+		
 		barLayer.animate
 			time: 0.3
 			curve: "linear"
