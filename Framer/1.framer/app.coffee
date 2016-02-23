@@ -151,9 +151,6 @@ animate_bar = (bar, callback) ->
 
 		ff_seconds(bar)
 		
-# 		Utils.delay 0.8, ->
-# 			update_time_text(bar, timers[bar].time)
-		
 		timers[bar].textLayer.animate
 			time: 0.3
 			curve: "linear"
