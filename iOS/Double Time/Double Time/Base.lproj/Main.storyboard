@@ -20,7 +20,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvq-Tz-Yg6" userLabel="BarA">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fR4-Wv-Xvg" userLabel="Progress">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fR4-Wv-Xvg" userLabel="Progress Bar">
                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="300"/>
                                         <color key="backgroundColor" red="0.8980392157" green="0.18039215689999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
@@ -45,7 +45,7 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLE-PX-WlP" userLabel="BarB">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AJf-Xb-xOu" userLabel="Progress">
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AJf-Xb-xOu" userLabel="Progress Bar">
                                         <rect key="frame" x="0.0" y="0.0" width="0.0" height="300"/>
                                         <color key="backgroundColor" red="0.074509803920000006" green="0.18039215689999999" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
                                     </view>
@@ -84,6 +84,10 @@
                             <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="fLE-PX-WlP" secondAttribute="bottom" id="zXs-ty-0su"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="barAProgressLabel" destination="p6P-C1-bcH" id="PvN-lP-ps9"/>
+                        <outlet property="barBProgressLabel" destination="j2K-ig-0EH" id="q1r-sB-9Z1"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
