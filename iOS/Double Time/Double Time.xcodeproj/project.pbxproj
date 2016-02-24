@@ -14,6 +14,9 @@
 		1600D1F61C7D2255002C99CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1600D1F41C7D2255002C99CB /* LaunchScreen.storyboard */; };
 		1600D2011C7D2256002C99CB /* Double_TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600D2001C7D2256002C99CB /* Double_TimeTests.swift */; };
 		1600D20C1C7D2256002C99CB /* Double_TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600D20B1C7D2256002C99CB /* Double_TimeUITests.swift */; };
+		168EF9091C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
+		168EF90A1C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
+		168EF90B1C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +50,7 @@
 		1600D2071C7D2256002C99CB /* Double TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Double TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1600D20B1C7D2256002C99CB /* Double_TimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double_TimeUITests.swift; sourceTree = "<group>"; };
 		1600D20D1C7D2256002C99CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		168EF9081C7D664300AAFDFE /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +103,7 @@
 			children = (
 				1600D1EB1C7D2255002C99CB /* AppDelegate.swift */,
 				1600D1ED1C7D2255002C99CB /* ViewController.swift */,
+				168EF9081C7D664300AAFDFE /* Timer.swift */,
 				1600D1EF1C7D2255002C99CB /* Main.storyboard */,
 				1600D1F21C7D2255002C99CB /* Assets.xcassets */,
 				1600D1F41C7D2255002C99CB /* LaunchScreen.storyboard */,
@@ -256,6 +261,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				168EF9091C7D664300AAFDFE /* Timer.swift in Sources */,
 				1600D1EE1C7D2255002C99CB /* ViewController.swift in Sources */,
 				1600D1EC1C7D2255002C99CB /* AppDelegate.swift in Sources */,
 			);
@@ -266,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1600D2011C7D2256002C99CB /* Double_TimeTests.swift in Sources */,
+				168EF90A1C7D664300AAFDFE /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +281,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1600D20C1C7D2256002C99CB /* Double_TimeUITests.swift in Sources */,
+				168EF90B1C7D664300AAFDFE /* Timer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -486,6 +494,7 @@
 				1600D2121C7D2256002C99CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1600D2131C7D2256002C99CB /* Build configuration list for PBXNativeTarget "Double TimeTests" */ = {
 			isa = XCConfigurationList;
@@ -494,6 +503,7 @@
 				1600D2151C7D2256002C99CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1600D2161C7D2256002C99CB /* Build configuration list for PBXNativeTarget "Double TimeUITests" */ = {
 			isa = XCConfigurationList;
@@ -502,6 +512,7 @@
 				1600D2181C7D2256002C99CB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
