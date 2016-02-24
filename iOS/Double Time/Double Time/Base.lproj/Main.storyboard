@@ -17,16 +17,61 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvq-Tz-Yg6">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvq-Tz-Yg6" userLabel="BarA">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
-                                <color key="backgroundColor" red="0.89411764709999997" green="0.17254901959999999" blue="0.023529411760000001" alpha="1" colorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fR4-Wv-Xvg" userLabel="Progress">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="300"/>
+                                        <color key="backgroundColor" red="0.8980392157" green="0.18039215689999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="p6P-C1-bcH">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="50"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.3843137254901961" blue="0.3411764705882353" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                    </label>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="fR4-Wv-Xvg" secondAttribute="bottom" id="Ixu-cF-0R6"/>
+                                    <constraint firstItem="fR4-Wv-Xvg" firstAttribute="top" secondItem="bvq-Tz-Yg6" secondAttribute="top" id="RLr-Ch-1fT"/>
+                                    <constraint firstAttribute="trailing" secondItem="p6P-C1-bcH" secondAttribute="trailing" constant="20" id="ZRt-yQ-ukV"/>
+                                    <constraint firstItem="p6P-C1-bcH" firstAttribute="top" secondItem="bvq-Tz-Yg6" secondAttribute="top" constant="20" id="aps-qO-Svl"/>
+                                    <constraint firstAttribute="bottom" secondItem="p6P-C1-bcH" secondAttribute="bottom" constant="20" id="b7S-IQ-dIo"/>
+                                    <constraint firstItem="p6P-C1-bcH" firstAttribute="leading" secondItem="bvq-Tz-Yg6" secondAttribute="leading" constant="20" id="cZ3-0y-o0C"/>
+                                    <constraint firstItem="fR4-Wv-Xvg" firstAttribute="leading" secondItem="bvq-Tz-Yg6" secondAttribute="leading" id="mOW-qw-XYV"/>
+                                </constraints>
                             </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLE-PX-WlP">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLE-PX-WlP" userLabel="BarB">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
-                                <color key="backgroundColor" red="0.074509803920000006" green="0.18039215689999999" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AJf-Xb-xOu" userLabel="Progress">
+                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="300"/>
+                                        <color key="backgroundColor" red="0.074509803920000006" green="0.18039215689999999" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="j2K-ig-0EH">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                        <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="50"/>
+                                        <color key="textColor" red="0.40000000000000002" green="0.38431372549999998" blue="0.3411764706" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                        <variation key="heightClass=regular-widthClass=regular" fixedFrame="YES">
+                                            <rect key="frame" x="20" y="20" width="760" height="360"/>
+                                        </variation>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="AJf-Xb-xOu" firstAttribute="leading" secondItem="fLE-PX-WlP" secondAttribute="leading" id="RkU-a2-6ZF"/>
+                                    <constraint firstItem="AJf-Xb-xOu" firstAttribute="top" secondItem="fLE-PX-WlP" secondAttribute="top" id="aad-0C-06A"/>
+                                    <constraint firstItem="j2K-ig-0EH" firstAttribute="top" secondItem="fLE-PX-WlP" secondAttribute="top" constant="20" id="dpV-vF-Tsa"/>
+                                    <constraint firstAttribute="bottom" secondItem="j2K-ig-0EH" secondAttribute="bottom" constant="20" id="iN0-mR-54s"/>
+                                    <constraint firstAttribute="trailing" secondItem="j2K-ig-0EH" secondAttribute="trailing" constant="20" id="nzr-CG-Z1Z"/>
+                                    <constraint firstAttribute="bottom" secondItem="AJf-Xb-xOu" secondAttribute="bottom" id="tfS-Qs-tFt"/>
+                                    <constraint firstItem="j2K-ig-0EH" firstAttribute="leading" secondItem="fLE-PX-WlP" secondAttribute="leading" constant="20" id="xbW-ZY-rCm"/>
+                                </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="fLE-PX-WlP" firstAttribute="top" secondItem="bvq-Tz-Yg6" secondAttribute="bottom" id="0yh-cw-scm"/>
                             <constraint firstItem="bvq-Tz-Yg6" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="3QI-zJ-Lhf"/>
