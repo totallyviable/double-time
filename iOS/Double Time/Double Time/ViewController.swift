@@ -27,45 +27,84 @@ class ViewController: UIViewController {
     var globalTimer = NSTimer()
     var globalTimerSecondsElapsed = 0
 
-    var timerA = Timer(length: 10)
+    var timerA = Timer(length: 5)
     var timerB = Timer(length: 5)
     
     var activeTimer: Timer!
     
     func startGlobalTimer() {
-        globalTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "globalTimerCountUp", userInfo: nil, repeats: true)
+        globalTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "globalTimerSelector", userInfo: nil, repeats: true)
         
-        activeTimer = timerA
+        toggleActiveTimer()
+        
+        // prefill timers with full values
+        updateText(timerA, seconds: timerA.length)
+        updateText(timerB, seconds: timerB.length)
     }
     
-    func globalTimerCountUp() {
+    func globalTimerSelector() {
         globalTimerSecondsElapsed += 1
         
-        if (globalTimerSecondsElapsed > activeTimer.length) {
-            globalTimerSecondsElapsed = 1
-            updateText(0)
+        if (globalTimerSecondsElapsed == activeTimer.length) {
+            globalTimerSecondsElapsed = 0
             
-            if (activeTimer === timerA) {
-                activeTimer = timerB
-            } else {
-                activeTimer = timerA
-            }
+            resetTimer(activeTimer)
             
-            globalTimerSecondsElapsed = 1
-            updateText(1)
+            toggleActiveTimer()
         }
         
-        updateText(globalTimerSecondsElapsed)
+        updateText(activeTimer, seconds: activeTimer.length - globalTimerSecondsElapsed)
     }
     
-    func secondsToHoursMinutesSeconds (seconds : Int) -> (String, String, String) {
+    func secondsToHoursMinutesSeconds(seconds: Int) -> (String, String, String) {
         return (String(format: "%02d", seconds / 3600), String(format: "%02d", (seconds % 3600) / 60), String(format: "%02d", seconds % 60))
     }
     
-    func updateText(seconds: Int) {
+    func updateText(timer: Timer, seconds: Int) {
         let (h,m,s) = secondsToHoursMinutesSeconds(seconds)
         
-        activeTimer.progressLabel.text = "\(h):\(m):\(s)"
+        timer.progressLabel.text = "\(h):\(m):\(s)"
+    }
+    
+    var resetTimerInterval = NSTimer()
+    var resetTimerActiveTimer: Timer!
+    var resetTimerCount = 0.0
+    
+    func resetTimer(timer: Timer) {
+        resetTimerCount = 0.0
+        
+        resetTimerActiveTimer = timer
+        
+        updateText(resetTimerActiveTimer, seconds: 0)
+        
+        resetTimerInterval = NSTimer.scheduledTimerWithTimeInterval(1.0 / 60.0, target: self, selector: "resetTimerSelector", userInfo: nil, repeats: true)
+    }
+    
+    func resetTimerSelector() {
+        resetTimerCount += ceil(Double(resetTimerActiveTimer.length) / 60.0)
+        
+        updateText(resetTimerActiveTimer, seconds: Int(resetTimerCount))
+        
+        if (resetTimerCount >= Double(resetTimerActiveTimer.length)) {
+            resetTimerInterval.invalidate()
+        }
+    }
+    
+    func toggleActiveTimer() {
+        // if it's nil, "start" with B so that we immediately switch to A
+        if (activeTimer == nil) {
+            activeTimer = timerB
+        }
+        
+        activeTimer.progressLabel.textColor = UIColor(red: 0.4, green: 0.384314, blue: 0.341176, alpha: 1.0)
+        
+        if (activeTimer === timerA) {
+            activeTimer = timerB
+        } else {
+            activeTimer = timerA
+        }
+        
+        activeTimer.progressLabel.textColor = UIColor.whiteColor()
     }
 }
 
