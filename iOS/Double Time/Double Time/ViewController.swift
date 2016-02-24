@@ -18,8 +18,8 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        timerA.setProgressLabel(barAProgressLabel)
-        timerB.setProgressLabel(barBProgressLabel)
+        timerA.progressLabel = barAProgressLabel
+        timerB.progressLabel = barBProgressLabel
         
         startGlobalTimer()
     }
