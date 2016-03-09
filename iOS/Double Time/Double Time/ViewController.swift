@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -32,6 +33,9 @@ class ViewController: UIViewController {
         
         drawProgressBar(timerA)
         drawProgressBar(timerB)
+        
+        timerA.setupDoneSound("doubletime-timer-a")
+        timerB.setupDoneSound("doubletime-timer-b")
         
         startGlobalTimer()
     }
@@ -101,6 +105,8 @@ class ViewController: UIViewController {
         
         if (globalTimerSecondsElapsed == activeTimer.length) {
             globalTimerSecondsElapsed = 0
+            
+            activeTimer.playDoneSound()
             
             resetTimer(activeTimer)
             
