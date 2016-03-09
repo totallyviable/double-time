@@ -20,10 +20,9 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bvq-Tz-Yg6" userLabel="BarA">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="fR4-Wv-Xvg" userLabel="Progress Bar">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="300"/>
-                                        <color key="backgroundColor" red="0.8980392157" green="0.18039215689999999" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="7xX-Ze-NdQ" userLabel="BarA Progress Bar">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="p6P-C1-bcH">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="50"/>
@@ -33,22 +32,22 @@
                                     </label>
                                 </subviews>
                                 <constraints>
-                                    <constraint firstAttribute="bottom" secondItem="fR4-Wv-Xvg" secondAttribute="bottom" id="Ixu-cF-0R6"/>
-                                    <constraint firstItem="fR4-Wv-Xvg" firstAttribute="top" secondItem="bvq-Tz-Yg6" secondAttribute="top" id="RLr-Ch-1fT"/>
-                                    <constraint firstAttribute="trailing" secondItem="p6P-C1-bcH" secondAttribute="trailing" constant="20" id="ZRt-yQ-ukV"/>
-                                    <constraint firstItem="p6P-C1-bcH" firstAttribute="top" secondItem="bvq-Tz-Yg6" secondAttribute="top" constant="20" id="aps-qO-Svl"/>
-                                    <constraint firstAttribute="bottom" secondItem="p6P-C1-bcH" secondAttribute="bottom" constant="20" id="b7S-IQ-dIo"/>
-                                    <constraint firstItem="p6P-C1-bcH" firstAttribute="leading" secondItem="bvq-Tz-Yg6" secondAttribute="leading" constant="20" id="cZ3-0y-o0C"/>
-                                    <constraint firstItem="fR4-Wv-Xvg" firstAttribute="leading" secondItem="bvq-Tz-Yg6" secondAttribute="leading" id="mOW-qw-XYV"/>
+                                    <constraint firstItem="7xX-Ze-NdQ" firstAttribute="top" secondItem="bvq-Tz-Yg6" secondAttribute="top" id="2HD-JB-zGQ"/>
+                                    <constraint firstAttribute="bottom" secondItem="7xX-Ze-NdQ" secondAttribute="bottom" id="8Ej-Ji-Jt3"/>
+                                    <constraint firstItem="7xX-Ze-NdQ" firstAttribute="leading" secondItem="bvq-Tz-Yg6" secondAttribute="leading" id="BWm-mx-IYT"/>
+                                    <constraint firstAttribute="trailing" secondItem="7xX-Ze-NdQ" secondAttribute="trailing" id="DTd-JX-RTP"/>
+                                    <constraint firstAttribute="trailing" secondItem="p6P-C1-bcH" secondAttribute="trailing" constant="20" symbolic="YES" id="ZRt-yQ-ukV"/>
+                                    <constraint firstItem="p6P-C1-bcH" firstAttribute="top" secondItem="bvq-Tz-Yg6" secondAttribute="top" constant="20" symbolic="YES" id="aps-qO-Svl"/>
+                                    <constraint firstAttribute="bottom" secondItem="p6P-C1-bcH" secondAttribute="bottom" constant="20" symbolic="YES" id="b7S-IQ-dIo"/>
+                                    <constraint firstItem="p6P-C1-bcH" firstAttribute="leading" secondItem="bvq-Tz-Yg6" secondAttribute="leading" constant="20" symbolic="YES" id="cZ3-0y-o0C"/>
                                 </constraints>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLE-PX-WlP" userLabel="BarB">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
                                 <subviews>
-                                    <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="AJf-Xb-xOu" userLabel="Progress Bar">
-                                        <rect key="frame" x="0.0" y="0.0" width="0.0" height="300"/>
-                                        <color key="backgroundColor" red="0.074509803920000006" green="0.18039215689999999" blue="0.68627450980000004" alpha="1" colorSpace="calibratedRGB"/>
-                                    </view>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Wt0-su-bW9" userLabel="BarB Progress Bar">
+                                        <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
+                                    </imageView>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="00:00:00" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="j2K-ig-0EH">
                                         <rect key="frame" x="0.0" y="0.0" width="600" height="300"/>
                                         <fontDescription key="fontDescription" name="Menlo-Regular" family="Menlo" pointSize="50"/>
@@ -61,13 +60,14 @@
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="AJf-Xb-xOu" firstAttribute="leading" secondItem="fLE-PX-WlP" secondAttribute="leading" id="RkU-a2-6ZF"/>
-                                    <constraint firstItem="AJf-Xb-xOu" firstAttribute="top" secondItem="fLE-PX-WlP" secondAttribute="top" id="aad-0C-06A"/>
-                                    <constraint firstItem="j2K-ig-0EH" firstAttribute="top" secondItem="fLE-PX-WlP" secondAttribute="top" constant="20" id="dpV-vF-Tsa"/>
-                                    <constraint firstAttribute="bottom" secondItem="j2K-ig-0EH" secondAttribute="bottom" constant="20" id="iN0-mR-54s"/>
-                                    <constraint firstAttribute="trailing" secondItem="j2K-ig-0EH" secondAttribute="trailing" constant="20" id="nzr-CG-Z1Z"/>
-                                    <constraint firstAttribute="bottom" secondItem="AJf-Xb-xOu" secondAttribute="bottom" id="tfS-Qs-tFt"/>
-                                    <constraint firstItem="j2K-ig-0EH" firstAttribute="leading" secondItem="fLE-PX-WlP" secondAttribute="leading" constant="20" id="xbW-ZY-rCm"/>
+                                    <constraint firstAttribute="bottom" secondItem="Wt0-su-bW9" secondAttribute="bottom" id="73T-qh-yoe"/>
+                                    <constraint firstAttribute="trailing" secondItem="Wt0-su-bW9" secondAttribute="trailing" id="8XE-5S-NCF"/>
+                                    <constraint firstItem="Wt0-su-bW9" firstAttribute="top" secondItem="fLE-PX-WlP" secondAttribute="top" id="W4n-B1-D9n"/>
+                                    <constraint firstItem="Wt0-su-bW9" firstAttribute="leading" secondItem="fLE-PX-WlP" secondAttribute="leading" id="dY4-9n-1fg"/>
+                                    <constraint firstItem="j2K-ig-0EH" firstAttribute="top" secondItem="fLE-PX-WlP" secondAttribute="top" constant="20" symbolic="YES" id="dpV-vF-Tsa"/>
+                                    <constraint firstAttribute="bottom" secondItem="j2K-ig-0EH" secondAttribute="bottom" constant="20" symbolic="YES" id="iN0-mR-54s"/>
+                                    <constraint firstAttribute="trailing" secondItem="j2K-ig-0EH" secondAttribute="trailing" constant="20" symbolic="YES" id="nzr-CG-Z1Z"/>
+                                    <constraint firstItem="j2K-ig-0EH" firstAttribute="leading" secondItem="fLE-PX-WlP" secondAttribute="leading" constant="20" symbolic="YES" id="xbW-ZY-rCm"/>
                                 </constraints>
                             </view>
                         </subviews>
@@ -85,7 +85,9 @@
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="barAProgressBar" destination="7xX-Ze-NdQ" id="xPI-bx-hFa"/>
                         <outlet property="barAProgressLabel" destination="p6P-C1-bcH" id="PvN-lP-ps9"/>
+                        <outlet property="barBProgressBar" destination="Wt0-su-bW9" id="jsd-Ls-sFX"/>
                         <outlet property="barBProgressLabel" destination="j2K-ig-0EH" id="q1r-sB-9Z1"/>
                     </connections>
                 </viewController>

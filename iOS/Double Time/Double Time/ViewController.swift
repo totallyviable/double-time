@@ -14,6 +14,9 @@ class ViewController: UIViewController {
     // MARK: Properties
     @IBOutlet weak var barAProgressLabel: UILabel!
     @IBOutlet weak var barBProgressLabel: UILabel!
+        
+    @IBOutlet weak var barAProgressBar: UIImageView!
+    @IBOutlet weak var barBProgressBar: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -21,13 +24,64 @@ class ViewController: UIViewController {
         timerA.progressLabel = barAProgressLabel
         timerB.progressLabel = barBProgressLabel
         
+        timerA.progressBar = barAProgressBar
+        timerB.progressBar = barBProgressBar
+        
+        timerA.progressBarColor = UIColor(red:0.92, green:0.26, blue:0.0, alpha:1.0)
+        timerB.progressBarColor = UIColor(red:0.1, green:0.27, blue:0.74, alpha:1.0)
+        
+        drawProgressBar(timerA)
+        drawProgressBar(timerB)
+        
         startGlobalTimer()
+    }
+    
+    func drawProgressBar(timer: Timer) {
+        let imageView = timer.progressBar
+        
+        let rect = CGRectMake(0, 0, imageView.frame.size.width, imageView.frame.size.height)
+        
+        UIGraphicsBeginImageContextWithOptions(imageView.frame.size, false, 0)
+        
+        timer.progressBarColor.setFill()
+        UIRectFill(rect)
+        
+        let image = UIGraphicsGetImageFromCurrentImageContext()
+        UIGraphicsEndImageContext()
+        
+        imageView.image = image
+        
+        resetProgressBar(imageView)
+    }
+    
+    func animateProgressBar(imageView: UIImageView, duration: Double) {
+        resetProgressBar(imageView)
+        
+        UIView.animateWithDuration(duration, animations:
+            {() -> Void in
+                imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, imageView.superview!.frame.width, imageView.frame.height)
+            })
+            { (finished) -> Void in
+                UIView.animateWithDuration(0.3, animations:
+                    {() -> Void in
+                        imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, 0, imageView.frame.height)
+                    })
+                    { (finished) -> Void in
+                        self.resetProgressBar(imageView)
+                }
+        }
+    }
+    
+    func resetProgressBar(imageView: UIImageView) {
+        imageView.layer.removeAllAnimations()
+        
+        imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, 0.0, imageView.frame.height)
     }
     
     var globalTimer = NSTimer()
     var globalTimerSecondsElapsed = 0
 
-    var timerA = Timer(length: 5)
+    var timerA = Timer(length: 3)
     var timerB = Timer(length: 5)
     
     var activeTimer: Timer!
@@ -105,6 +159,8 @@ class ViewController: UIViewController {
         }
         
         activeTimer.progressLabel.textColor = UIColor.whiteColor()
+        
+        animateProgressBar(activeTimer.progressBar, duration: Double(activeTimer.length))
     }
 }
 

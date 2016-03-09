@@ -12,6 +12,8 @@ class Timer {
     var length = 0
     
     var progressLabel: UILabel!
+    var progressBar: UIImageView!
+    var progressBarColor: UIColor!
     
     init(length: Int) {
         self.length = length
