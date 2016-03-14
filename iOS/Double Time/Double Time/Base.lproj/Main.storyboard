@@ -31,6 +31,7 @@
                                         <color key="shadowColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                     </label>
                                 </subviews>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstItem="7xX-Ze-NdQ" firstAttribute="top" secondItem="bvq-Tz-Yg6" secondAttribute="top" id="2HD-JB-zGQ"/>
                                     <constraint firstAttribute="bottom" secondItem="7xX-Ze-NdQ" secondAttribute="bottom" id="8Ej-Ji-Jt3"/>
@@ -41,6 +42,9 @@
                                     <constraint firstAttribute="bottom" secondItem="p6P-C1-bcH" secondAttribute="bottom" constant="20" symbolic="YES" id="b7S-IQ-dIo"/>
                                     <constraint firstItem="p6P-C1-bcH" firstAttribute="leading" secondItem="bvq-Tz-Yg6" secondAttribute="leading" constant="20" symbolic="YES" id="cZ3-0y-o0C"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="xs1-5b-lsb" appends="YES" id="2rH-UZ-MW7"/>
+                                </connections>
                             </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fLE-PX-WlP" userLabel="BarB">
                                 <rect key="frame" x="0.0" y="300" width="600" height="300"/>
@@ -59,6 +63,7 @@
                                     </label>
                                 </subviews>
                                 <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                <gestureRecognizers/>
                                 <constraints>
                                     <constraint firstAttribute="bottom" secondItem="Wt0-su-bW9" secondAttribute="bottom" id="73T-qh-yoe"/>
                                     <constraint firstAttribute="trailing" secondItem="Wt0-su-bW9" secondAttribute="trailing" id="8XE-5S-NCF"/>
@@ -69,6 +74,9 @@
                                     <constraint firstAttribute="trailing" secondItem="j2K-ig-0EH" secondAttribute="trailing" constant="20" symbolic="YES" id="nzr-CG-Z1Z"/>
                                     <constraint firstItem="j2K-ig-0EH" firstAttribute="leading" secondItem="fLE-PX-WlP" secondAttribute="leading" constant="20" symbolic="YES" id="xbW-ZY-rCm"/>
                                 </constraints>
+                                <connections>
+                                    <outletCollection property="gestureRecognizers" destination="0PF-59-HKd" appends="YES" id="JYH-Ie-2ea"/>
+                                </connections>
                             </view>
                         </subviews>
                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
@@ -92,6 +100,16 @@
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="xs1-5b-lsb" userLabel="BarALongPress">
+                    <connections>
+                        <action selector="handleBarALongPress:" destination="BYZ-38-t0r" id="Sbz-pR-wgR"/>
+                    </connections>
+                </pongPressGestureRecognizer>
+                <pongPressGestureRecognizer allowableMovement="10" minimumPressDuration="0.5" id="0PF-59-HKd" userLabel="BarBLongPress">
+                    <connections>
+                        <action selector="handleBarBLongPress:" destination="BYZ-38-t0r" id="S1b-c7-nSO"/>
+                    </connections>
+                </pongPressGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="454" y="449"/>
         </scene>

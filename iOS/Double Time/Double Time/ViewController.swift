@@ -40,6 +40,58 @@ class ViewController: UIViewController {
         startGlobalTimer()
     }
     
+    @IBAction func handleBarALongPress(sender: AnyObject) {
+        if sender.state == UIGestureRecognizerState.Began {
+            openSetDurationPrompt(timerA)
+        }
+    }
+    
+    @IBAction func handleBarBLongPress(sender: AnyObject) {
+        if sender.state == UIGestureRecognizerState.Began {
+            openSetDurationPrompt(timerB)
+        }
+    }
+    
+    func openSetDurationPrompt(timer: Timer) {
+        stopGlobalTimer()
+        
+        let alertController = UIAlertController(title: nil, message: "Set duration", preferredStyle: .Alert)
+        
+        let setDurationAction = UIAlertAction(title: "Set Duration", style: .Default) { (_) in
+            let durationTextField = alertController.textFields![0] as UITextField
+            
+            self.setDuration(timer, duration: durationTextField.text! as String)
+        }
+        
+        setDurationAction.enabled = false
+        
+        let cancelAction = UIAlertAction(title: "Cancel", style: .Cancel) { (_) in
+            self.startGlobalTimer()
+        }
+        
+        alertController.addTextFieldWithConfigurationHandler { (textField) in
+            textField.placeholder = String(timer.length)
+            textField.keyboardType = .NumberPad
+            
+            NSNotificationCenter.defaultCenter().addObserverForName(UITextFieldTextDidChangeNotification, object: textField, queue: NSOperationQueue.mainQueue()) { (notification) in
+                setDurationAction.enabled = textField.text != ""
+            }
+        }
+        
+        alertController.addAction(setDurationAction)
+        alertController.addAction(cancelAction)
+        
+        self.presentViewController(alertController, animated: true, completion: nil)
+    }
+    
+    func setDuration(timer: Timer, duration: String) {
+        timer.length = Int(duration)!
+        
+        activeTimer = nil
+        
+        self.startGlobalTimer()
+    }
+    
     func drawProgressBar(timer: Timer) {
         let imageView = timer.progressBar
         
@@ -98,6 +150,14 @@ class ViewController: UIViewController {
         // prefill timers with full values
         updateText(timerA, seconds: timerA.length)
         updateText(timerB, seconds: timerB.length)
+    }
+    
+    func stopGlobalTimer() {
+        globalTimer.invalidate()
+        globalTimerSecondsElapsed = 0
+        
+        resetProgressBar(timerA.progressBar)
+        resetProgressBar(timerB.progressBar)
     }
     
     func globalTimerSelector() {
