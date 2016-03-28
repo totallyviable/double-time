@@ -19,6 +19,18 @@ class ViewController: UIViewController {
     @IBOutlet weak var barAProgressBar: UIImageView!
     @IBOutlet weak var barBProgressBar: UIImageView!
     
+    var globalTimer = NSTimer()
+    var globalTimerSecondsElapsed = 0
+    
+    var timerA = Timer(length: 3)
+    var timerB = Timer(length: 5)
+    
+    var activeTimer: Timer!
+    
+    var resetTimerInterval = NSTimer()
+    var resetTimerActiveTimer: Timer!
+    var resetTimerCount = 0.0
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -160,14 +172,6 @@ class ViewController: UIViewController {
         imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, 0.0, imageView.frame.height)
     }
     
-    var globalTimer = NSTimer()
-    var globalTimerSecondsElapsed = 0
-
-    var timerA = Timer(length: 3)
-    var timerB = Timer(length: 5)
-    
-    var activeTimer: Timer!
-    
     func startGlobalTimer() {
         globalTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "globalTimerSelector", userInfo: nil, repeats: true)
         
@@ -211,10 +215,6 @@ class ViewController: UIViewController {
         
         timer.progressLabel.text = "\(h):\(m):\(s)"
     }
-    
-    var resetTimerInterval = NSTimer()
-    var resetTimerActiveTimer: Timer!
-    var resetTimerCount = 0.0
     
     func resetTimer(timer: Timer) {
         resetTimerCount = 0.0
