@@ -19,11 +19,13 @@ class ViewController: UIViewController {
     @IBOutlet weak var barAProgressBar: UIImageView!
     @IBOutlet weak var barBProgressBar: UIImageView!
     
+    let prefs = NSUserDefaults.standardUserDefaults()
+    
     var globalTimer = NSTimer()
     var globalTimerSecondsElapsed = 0
     
-    var timerA = Timer(length: 3)
-    var timerB = Timer(length: 5)
+    var topTimer = Timer(name: "top")
+    var bottomTimer = Timer(name: "bottom")
     
     var activeTimer: Timer!
     
@@ -48,20 +50,14 @@ class ViewController: UIViewController {
             object: nil
         )
         
-        timerA.progressLabel = barAProgressLabel
-        timerB.progressLabel = barBProgressLabel
+        topTimer.progressLabel = barAProgressLabel
+        bottomTimer.progressLabel = barBProgressLabel
         
-        timerA.progressBar = barAProgressBar
-        timerB.progressBar = barBProgressBar
+        topTimer.progressBar = barAProgressBar
+        bottomTimer.progressBar = barBProgressBar
         
-        timerA.progressBarColor = UIColor(red:0.92, green:0.26, blue:0.0, alpha:1.0)
-        timerB.progressBarColor = UIColor(red:0.1, green:0.27, blue:0.74, alpha:1.0)
-        
-        drawProgressBar(timerA)
-        drawProgressBar(timerB)
-        
-        timerA.setupDoneSound("doubletime-timer-a")
-        timerB.setupDoneSound("doubletime-timer-b")
+        drawProgressBar(topTimer)
+        drawProgressBar(bottomTimer)
         
         startGlobalTimer()
     }
@@ -80,13 +76,13 @@ class ViewController: UIViewController {
     
     @IBAction func handleBarALongPress(sender: AnyObject) {
         if sender.state == UIGestureRecognizerState.Began {
-            openSetDurationPrompt(timerA)
+            openSetDurationPrompt(topTimer)
         }
     }
     
     @IBAction func handleBarBLongPress(sender: AnyObject) {
         if sender.state == UIGestureRecognizerState.Began {
-            openSetDurationPrompt(timerB)
+            openSetDurationPrompt(bottomTimer)
         }
     }
     
@@ -108,7 +104,7 @@ class ViewController: UIViewController {
         }
         
         alertController.addTextFieldWithConfigurationHandler { (textField) in
-            textField.placeholder = String(timer.length)
+            textField.placeholder = String(timer.duration)
             textField.keyboardType = .NumberPad
             
             NSNotificationCenter.defaultCenter().addObserverForName(UITextFieldTextDidChangeNotification, object: textField, queue: NSOperationQueue.mainQueue()) { (notification) in
@@ -123,7 +119,9 @@ class ViewController: UIViewController {
     }
     
     func setDuration(timer: Timer, duration: String) {
-        timer.length = Int(duration)!
+        timer.duration = Int(duration)!
+        
+        prefs.setInteger(timer.duration, forKey: timer.name + "TimerDuration")
         
         activeTimer = nil
         
@@ -178,22 +176,22 @@ class ViewController: UIViewController {
         toggleActiveTimer()
         
         // prefill timers with full values
-        updateText(timerA, seconds: timerA.length)
-        updateText(timerB, seconds: timerB.length)
+        updateText(topTimer, seconds: topTimer.duration)
+        updateText(bottomTimer, seconds: bottomTimer.duration)
     }
     
     func stopGlobalTimer() {
         globalTimer.invalidate()
         globalTimerSecondsElapsed = 0
         
-        resetProgressBar(timerA.progressBar)
-        resetProgressBar(timerB.progressBar)
+        resetProgressBar(topTimer.progressBar)
+        resetProgressBar(bottomTimer.progressBar)
     }
     
     func globalTimerSelector() {
         globalTimerSecondsElapsed += 1
         
-        if (globalTimerSecondsElapsed == activeTimer.length) {
+        if (globalTimerSecondsElapsed == activeTimer.duration) {
             globalTimerSecondsElapsed = 0
             
             activeTimer.playDoneSound()
@@ -203,7 +201,7 @@ class ViewController: UIViewController {
             toggleActiveTimer()
         }
         
-        updateText(activeTimer, seconds: activeTimer.length - globalTimerSecondsElapsed)
+        updateText(activeTimer, seconds: activeTimer.duration - globalTimerSecondsElapsed)
     }
     
     func secondsToHoursMinutesSeconds(seconds: Int) -> (String, String, String) {
@@ -227,11 +225,11 @@ class ViewController: UIViewController {
     }
     
     func resetTimerSelector() {
-        resetTimerCount += ceil(Double(resetTimerActiveTimer.length) / 60.0)
+        resetTimerCount += ceil(Double(resetTimerActiveTimer.duration) / 60.0)
         
         updateText(resetTimerActiveTimer, seconds: Int(resetTimerCount))
         
-        if (resetTimerCount >= Double(resetTimerActiveTimer.length)) {
+        if (resetTimerCount >= Double(resetTimerActiveTimer.duration)) {
             resetTimerInterval.invalidate()
         }
     }
@@ -239,20 +237,20 @@ class ViewController: UIViewController {
     func toggleActiveTimer() {
         // if it's nil, "start" with B so that we immediately switch to A
         if (activeTimer == nil) {
-            activeTimer = timerB
+            activeTimer = bottomTimer
         }
         
         activeTimer.progressLabel.textColor = UIColor(red: 0.4, green: 0.384314, blue: 0.341176, alpha: 1.0)
         
-        if (activeTimer === timerA) {
-            activeTimer = timerB
+        if (activeTimer === topTimer) {
+            activeTimer = bottomTimer
         } else {
-            activeTimer = timerA
+            activeTimer = topTimer
         }
         
         activeTimer.progressLabel.textColor = UIColor.whiteColor()
         
-        animateProgressBar(activeTimer.progressBar, duration: Double(activeTimer.length))
+        animateProgressBar(activeTimer.progressBar, duration: Double(activeTimer.duration))
     }
 }
 

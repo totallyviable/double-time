@@ -14,8 +14,8 @@
 		1600D1F61C7D2255002C99CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1600D1F41C7D2255002C99CB /* LaunchScreen.storyboard */; };
 		1600D2011C7D2256002C99CB /* Double_TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600D2001C7D2256002C99CB /* Double_TimeTests.swift */; };
 		1600D20C1C7D2256002C99CB /* Double_TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600D20B1C7D2256002C99CB /* Double_TimeUITests.swift */; };
-		16302F171C8FB5060087F26D /* doubletime-timer-b.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16302F151C8FB5060087F26D /* doubletime-timer-b.wav */; };
-		16302F181C8FB5060087F26D /* doubletime-timer-a.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16302F161C8FB5060087F26D /* doubletime-timer-a.wav */; };
+		16302F171C8FB5060087F26D /* done-sound-bottom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16302F151C8FB5060087F26D /* done-sound-bottom.wav */; };
+		16302F181C8FB5060087F26D /* done-sound-top.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16302F161C8FB5060087F26D /* done-sound-top.wav */; };
 		168EF9091C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
 		168EF90A1C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
 		168EF90B1C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
@@ -52,8 +52,8 @@
 		1600D2071C7D2256002C99CB /* Double TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Double TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1600D20B1C7D2256002C99CB /* Double_TimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double_TimeUITests.swift; sourceTree = "<group>"; };
 		1600D20D1C7D2256002C99CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		16302F151C8FB5060087F26D /* doubletime-timer-b.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "doubletime-timer-b.wav"; sourceTree = "<group>"; };
-		16302F161C8FB5060087F26D /* doubletime-timer-a.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "doubletime-timer-a.wav"; sourceTree = "<group>"; };
+		16302F151C8FB5060087F26D /* done-sound-bottom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "done-sound-bottom.wav"; sourceTree = "<group>"; };
+		16302F161C8FB5060087F26D /* done-sound-top.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "done-sound-top.wav"; sourceTree = "<group>"; };
 		168EF9081C7D664300AAFDFE /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -107,8 +107,8 @@
 			children = (
 				1600D1EB1C7D2255002C99CB /* AppDelegate.swift */,
 				1600D1ED1C7D2255002C99CB /* ViewController.swift */,
-				16302F161C8FB5060087F26D /* doubletime-timer-a.wav */,
-				16302F151C8FB5060087F26D /* doubletime-timer-b.wav */,
+				16302F161C8FB5060087F26D /* done-sound-top.wav */,
+				16302F151C8FB5060087F26D /* done-sound-bottom.wav */,
 				168EF9081C7D664300AAFDFE /* Timer.swift */,
 				1600D1EF1C7D2255002C99CB /* Main.storyboard */,
 				1600D1F21C7D2255002C99CB /* Assets.xcassets */,
@@ -245,10 +245,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				16302F171C8FB5060087F26D /* doubletime-timer-b.wav in Resources */,
+				16302F171C8FB5060087F26D /* done-sound-bottom.wav in Resources */,
 				1600D1F61C7D2255002C99CB /* LaunchScreen.storyboard in Resources */,
 				1600D1F31C7D2255002C99CB /* Assets.xcassets in Resources */,
-				16302F181C8FB5060087F26D /* doubletime-timer-a.wav in Resources */,
+				16302F181C8FB5060087F26D /* done-sound-top.wav in Resources */,
 				1600D1F11C7D2255002C99CB /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
