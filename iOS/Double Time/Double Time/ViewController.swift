@@ -22,6 +22,20 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: "willResignActive:",
+            name: UIApplicationWillResignActiveNotification,
+            object: nil
+        )
+        
+        NSNotificationCenter.defaultCenter().addObserver(
+            self,
+            selector: "didBecomeActive:",
+            name: UIApplicationDidBecomeActiveNotification,
+            object: nil
+        )
+        
         timerA.progressLabel = barAProgressLabel
         timerB.progressLabel = barBProgressLabel
         
@@ -38,6 +52,18 @@ class ViewController: UIViewController {
         timerB.setupDoneSound("doubletime-timer-b")
         
         startGlobalTimer()
+    }
+    
+    func willResignActive(notification: NSNotification) {
+        resetProgressBar(activeTimer.progressBar)
+    }
+    
+    func didBecomeActive(notification: NSNotification) {
+        UIView.animateWithDuration(20.0, delay: 0, options: [UIViewAnimationOptions.BeginFromCurrentState], animations: {() -> Void in
+            let imageView = self.activeTimer.progressBar
+            imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, imageView.superview!.frame.width, imageView.frame.height)
+        }, completion: { _ in })
+
     }
     
     @IBAction func handleBarALongPress(sender: AnyObject) {
