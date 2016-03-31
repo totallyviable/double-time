@@ -8,7 +8,6 @@
 
 import Foundation
 import UIKit
-import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -171,6 +170,8 @@ class ViewController: UIViewController {
     }
     
     func startGlobalTimer() {
+        UIApplication.sharedApplication().idleTimerDisabled = true
+        
         globalTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "globalTimerSelector", userInfo: nil, repeats: true)
         
         toggleActiveTimer()
@@ -181,6 +182,8 @@ class ViewController: UIViewController {
     }
     
     func stopGlobalTimer() {
+        UIApplication.sharedApplication().idleTimerDisabled = false
+        
         globalTimer.invalidate()
         globalTimerSecondsElapsed = 0
         
@@ -194,7 +197,7 @@ class ViewController: UIViewController {
         if (globalTimerSecondsElapsed == activeTimer.duration) {
             globalTimerSecondsElapsed = 0
             
-            activeTimer.playDoneSound()
+            activeTimer.doneSound.play()
             
             resetTimer(activeTimer)
             
@@ -235,12 +238,7 @@ class ViewController: UIViewController {
     }
     
     func toggleActiveTimer() {
-        // if it's nil, "start" with B so that we immediately switch to A
-        if (activeTimer == nil) {
-            activeTimer = bottomTimer
-        }
-        
-        activeTimer.progressLabel.textColor = UIColor(red: 0.4, green: 0.384314, blue: 0.341176, alpha: 1.0)
+        activeTimer?.progressLabel.textColor = Timer.textColorInactive
         
         if (activeTimer === topTimer) {
             activeTimer = bottomTimer
@@ -248,7 +246,7 @@ class ViewController: UIViewController {
             activeTimer = topTimer
         }
         
-        activeTimer.progressLabel.textColor = UIColor.whiteColor()
+        activeTimer.progressLabel.textColor = Timer.textColorActive
         
         animateProgressBar(activeTimer.progressBar, duration: Double(activeTimer.duration))
     }

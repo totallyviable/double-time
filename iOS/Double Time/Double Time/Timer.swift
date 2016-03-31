@@ -6,27 +6,95 @@
 //  Copyright © 2016 Totally Viable. All rights reserved.
 //
 
+import Foundation
 import UIKit
 import AVFoundation
 
 let prefs = NSUserDefaults.standardUserDefaults()
+
+class AudioHelper: NSObject, AVAudioPlayerDelegate {
+    var player: AVAudioPlayer?
+    
+    var filename: String
+    var filetype = "wav"
+    
+    init(filename: String) {
+        self.filename = filename
+    }
+    
+    private func setupAudioPlayerWithFile(filename: NSString, filetype: NSString) -> AVAudioPlayer?  {
+        let path = NSBundle.mainBundle().pathForResource(filename as String, ofType: filetype as String)
+        let url = NSURL.fileURLWithPath(path!)
+        
+        var audioPlayer: AVAudioPlayer?
+        
+        do {
+            try audioPlayer = AVAudioPlayer(contentsOfURL: url)
+        } catch {
+            print("Player not available")
+        }
+        
+        return audioPlayer
+    }
+    
+    func initializeAudioPlayer() {
+        do {
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.MixWithOthers)
+        } catch {
+            print("Could not set playback options to DuckOthers")
+        }
+        
+        self.player = setupAudioPlayerWithFile(self.filename, filetype: self.filetype)
+    }
+    
+    func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
+        print("Did finish playing")
+        
+        do {
+            try AVAudioSession.sharedInstance().setActive(false)
+        } catch {
+            print("AVAudioSession setActive(false) failed")
+        }
+    }
+    
+    
+    func stop() {
+        self.player?.stop()
+        self.player?.prepareToPlay()
+    }
+    
+    func play() {
+        do {
+            try AVAudioSession.sharedInstance().setActive(true)
+        } catch {
+            print("AVAudioSession setActive(true) failed")
+        }
+        
+        self.player?.play()
+    }
+    
+}
 
 class Timer {
     // MARK: properties
     
     var name: String!
     var duration = 0
+    var elapsedTime = 0
     
     var progressLabel: UILabel!
     var progressBar: UIImageView!
     var progressBarColor: UIColor!
     
-    var doneSound: AVAudioPlayer?
+    var doneSound: AudioHelper!
+    
+    static var textColorInactive = UIColor(red: 0.4, green: 0.384314, blue: 0.341176, alpha: 1.0)
+    static var textColorActive = UIColor.whiteColor()
     
     init(name: String) {
         self.name = name
         
-        setupTimerForName(name)
+        self.setupTimerForName(name)
     }
     
     // MARK: private
@@ -48,34 +116,8 @@ class Timer {
         
         self.duration = (prefs.integerForKey(name + "TimerDuration") != 0) ? prefs.integerForKey(name + "TimerDuration") : durationDefault
         
-        setupDoneSound("done-sound-" + name)
-    }
-    
-    private func setupAudioPlayerWithFile(file: NSString, type: NSString) -> AVAudioPlayer?  {
-        let path = NSBundle.mainBundle().pathForResource(file as String, ofType: type as String)
-        let url = NSURL.fileURLWithPath(path!)
-        
-        var audioPlayer: AVAudioPlayer?
-        
-        do {
-            try audioPlayer = AVAudioPlayer(contentsOfURL: url)
-        } catch {
-            print("Player not available")
-        }
-        
-        return audioPlayer
-    }
-    
-    private func setupDoneSound(audioFileName: String) {
-        if let doneSound = self.setupAudioPlayerWithFile(audioFileName, type: "wav") {
-            self.doneSound = doneSound
-        }
-    }
-    
-    // MARK: public
-    
-    func playDoneSound() {
-        self.doneSound?.play()
+        self.doneSound = AudioHelper(filename: "done-sound-" + name)
+        self.doneSound.initializeAudioPlayer()
     }
 }
 
