@@ -19,7 +19,6 @@
 		168EF9091C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
 		168EF90A1C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
 		168EF90B1C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
-		72041875CD394CD85D1CC3F5 /* Pods_Double_Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233D604631AD3EF6688FB73F /* Pods_Double_Time.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,7 +66,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				72041875CD394CD85D1CC3F5 /* Pods_Double_Time.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
