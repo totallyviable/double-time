@@ -1,0 +1,15 @@
+platform :ios, '8.0'
+use_frameworks!
+
+target 'Double Time' do
+    pod 'BuddyBuildSDK'
+end
+
+target 'Double TimeTests' do
+
+end
+
+target 'Double TimeUITests' do
+
+end
+
