@@ -35,16 +35,14 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        NSNotificationCenter.defaultCenter().addObserver(
-            self,
-            selector: "willResignActive:",
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: #selector(ViewController.willResignActive(_:)),
             name: UIApplicationWillResignActiveNotification,
             object: nil
         )
         
-        NSNotificationCenter.defaultCenter().addObserver(
-            self,
-            selector: "didBecomeActive:",
+        NSNotificationCenter.defaultCenter().addObserver(self,
+            selector: #selector(ViewController.didBecomeActive(_:)),
             name: UIApplicationDidBecomeActiveNotification,
             object: nil
         )
@@ -172,7 +170,7 @@ class ViewController: UIViewController {
     func startGlobalTimer() {
         UIApplication.sharedApplication().idleTimerDisabled = true
         
-        globalTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: "globalTimerSelector", userInfo: nil, repeats: true)
+        globalTimer = NSTimer.scheduledTimerWithTimeInterval(1.0, target: self, selector: #selector(ViewController.globalTimerSelector), userInfo: nil, repeats: true)
         
         toggleActiveTimer()
         
@@ -224,7 +222,7 @@ class ViewController: UIViewController {
         
         updateText(resetTimerActiveTimer, seconds: 0)
         
-        resetTimerInterval = NSTimer.scheduledTimerWithTimeInterval(1.0 / 60.0, target: self, selector: "resetTimerSelector", userInfo: nil, repeats: true)
+        resetTimerInterval = NSTimer.scheduledTimerWithTimeInterval(1.0 / 60.0, target: self, selector: #selector(ViewController.resetTimerSelector), userInfo: nil, repeats: true)
     }
     
     func resetTimerSelector() {
