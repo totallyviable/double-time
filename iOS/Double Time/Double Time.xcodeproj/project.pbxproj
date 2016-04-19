@@ -1,1399 +1,706 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
-<plist version="1.0">
-<dict>
-	<key>archiveVersion</key>
-	<string>1</string>
-	<key>classes</key>
-	<dict/>
-	<key>objectVersion</key>
-	<string>46</string>
-	<key>objects</key>
-	<dict>
-		<key>1600D1DF1C7D2255002C99CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1600D1EA1C7D2255002C99CB</string>
-				<string>1600D1FF1C7D2256002C99CB</string>
-				<string>1600D20A1C7D2256002C99CB</string>
-				<string>1600D1E91C7D2255002C99CB</string>
-				<string>1F57169970C4A5AFE5384586</string>
-				<string>8DFD2A9514699412643BDD2A</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1E01C7D2255002C99CB</key>
-		<dict>
-			<key>attributes</key>
-			<dict>
-				<key>LastSwiftUpdateCheck</key>
-				<string>0730</string>
-				<key>LastUpgradeCheck</key>
-				<string>0720</string>
-				<key>ORGANIZATIONNAME</key>
-				<string>Totally Viable</string>
-				<key>TargetAttributes</key>
-				<dict>
-					<key>1600D1E71C7D2255002C99CB</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.2.1</string>
-						<key>DevelopmentTeam</key>
-						<string>H7BXRR563Q</string>
-						<key>SystemCapabilities</key>
-						<dict>
-							<key>com.apple.BackgroundModes</key>
-							<dict>
-								<key>enabled</key>
-								<string>1</string>
-							</dict>
-						</dict>
-					</dict>
-					<key>1600D1FB1C7D2256002C99CB</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.2.1</string>
-						<key>TestTargetID</key>
-						<string>1600D1E71C7D2255002C99CB</string>
-					</dict>
-					<key>1600D2061C7D2256002C99CB</key>
-					<dict>
-						<key>CreatedOnToolsVersion</key>
-						<string>7.2.1</string>
-						<key>TestTargetID</key>
-						<string>1600D1E71C7D2255002C99CB</string>
-					</dict>
-				</dict>
-			</dict>
-			<key>buildConfigurationList</key>
-			<string>1600D1E31C7D2255002C99CB</string>
-			<key>compatibilityVersion</key>
-			<string>Xcode 3.2</string>
-			<key>developmentRegion</key>
-			<string>English</string>
-			<key>hasScannedForEncodings</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXProject</string>
-			<key>knownRegions</key>
-			<array>
-				<string>en</string>
-				<string>Base</string>
-			</array>
-			<key>mainGroup</key>
-			<string>1600D1DF1C7D2255002C99CB</string>
-			<key>productRefGroup</key>
-			<string>1600D1E91C7D2255002C99CB</string>
-			<key>projectDirPath</key>
-			<string></string>
-			<key>projectReferences</key>
-			<array/>
-			<key>projectRoot</key>
-			<string></string>
-			<key>targets</key>
-			<array>
-				<string>1600D1E71C7D2255002C99CB</string>
-				<string>1600D1FB1C7D2256002C99CB</string>
-				<string>1600D2061C7D2256002C99CB</string>
-			</array>
-		</dict>
-		<key>1600D1E31C7D2255002C99CB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1600D20E1C7D2256002C99CB</string>
-				<string>1600D20F1C7D2256002C99CB</string>
-				<string>16B599C51CB2FABF0011DDDB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>1600D1E41C7D2255002C99CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>168EF9091C7D664300AAFDFE</string>
-				<string>1600D1EE1C7D2255002C99CB</string>
-				<string>1600D1EC1C7D2255002C99CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1600D1E51C7D2255002C99CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>DAC0370A6ADC86B6AE8234C6</string>
-			</array>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1600D1E61C7D2255002C99CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>16302F171C8FB5060087F26D</string>
-				<string>1600D1F61C7D2255002C99CB</string>
-				<string>1600D1F31C7D2255002C99CB</string>
-				<string>16302F181C8FB5060087F26D</string>
-				<string>1600D1F11C7D2255002C99CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1600D1E71C7D2255002C99CB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1600D2101C7D2256002C99CB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>770EC6C2932B5BC8330CAA3D</string>
-				<string>1600D1E41C7D2255002C99CB</string>
-				<string>1600D1E51C7D2255002C99CB</string>
-				<string>1600D1E61C7D2255002C99CB</string>
-				<string>C7A4A28D88C92604F003947A</string>
-				<string>2BBAD6DFE96D70B621F3DA83</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Double Time</string>
-			<key>productName</key>
-			<string>Double Time</string>
-			<key>productReference</key>
-			<string>1600D1E81C7D2255002C99CB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.application</string>
-		</dict>
-		<key>1600D1E81C7D2255002C99CB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.application</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>&#128679;DoubleTime.app</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1600D1E91C7D2255002C99CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1600D1E81C7D2255002C99CB</string>
-				<string>1600D1FC1C7D2256002C99CB</string>
-				<string>1600D2071C7D2256002C99CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Products</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1EA1C7D2255002C99CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1600D1EB1C7D2255002C99CB</string>
-				<string>1600D1ED1C7D2255002C99CB</string>
-				<string>16302F161C8FB5060087F26D</string>
-				<string>16302F151C8FB5060087F26D</string>
-				<string>168EF9081C7D664300AAFDFE</string>
-				<string>1600D1EF1C7D2255002C99CB</string>
-				<string>1600D1F21C7D2255002C99CB</string>
-				<string>1600D1F41C7D2255002C99CB</string>
-				<string>1600D1F71C7D2255002C99CB</string>
-				<string>166F03081CB2E57C000FC973</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Double Time</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1EB1C7D2255002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>AppDelegate.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1EC1C7D2255002C99CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1600D1EB1C7D2255002C99CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1600D1ED1C7D2255002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>ViewController.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1EE1C7D2255002C99CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1600D1ED1C7D2255002C99CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1600D1EF1C7D2255002C99CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1600D1F01C7D2255002C99CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1F01C7D2255002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/Main.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1F11C7D2255002C99CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1600D1EF1C7D2255002C99CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1600D1F21C7D2255002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>folder.assetcatalog</string>
-			<key>path</key>
-			<string>Assets.xcassets</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1F31C7D2255002C99CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1600D1F21C7D2255002C99CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1600D1F41C7D2255002C99CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1600D1F51C7D2255002C99CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXVariantGroup</string>
-			<key>name</key>
-			<string>LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1F51C7D2255002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>file.storyboard</string>
-			<key>name</key>
-			<string>Base</string>
-			<key>path</key>
-			<string>Base.lproj/LaunchScreen.storyboard</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1F61C7D2255002C99CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1600D1F41C7D2255002C99CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1600D1F71C7D2255002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D1F81C7D2256002C99CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1600D2011C7D2256002C99CB</string>
-				<string>168EF90A1C7D664300AAFDFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1600D1F91C7D2256002C99CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1600D1FA1C7D2256002C99CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1600D1FB1C7D2256002C99CB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1600D2131C7D2256002C99CB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1600D1F81C7D2256002C99CB</string>
-				<string>1600D1F91C7D2256002C99CB</string>
-				<string>1600D1FA1C7D2256002C99CB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>1600D1FE1C7D2256002C99CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Double TimeTests</string>
-			<key>productName</key>
-			<string>Double TimeTests</string>
-			<key>productReference</key>
-			<string>1600D1FC1C7D2256002C99CB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.unit-test</string>
-		</dict>
-		<key>1600D1FC1C7D2256002C99CB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Double TimeTests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1600D1FD1C7D2256002C99CB</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>1600D1E01C7D2255002C99CB</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>1600D1E71C7D2255002C99CB</string>
-			<key>remoteInfo</key>
-			<string>Double Time</string>
-		</dict>
-		<key>1600D1FE1C7D2256002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>1600D1E71C7D2255002C99CB</string>
-			<key>targetProxy</key>
-			<string>1600D1FD1C7D2256002C99CB</string>
-		</dict>
-		<key>1600D1FF1C7D2256002C99CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1600D2001C7D2256002C99CB</string>
-				<string>1600D2021C7D2256002C99CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Double TimeTests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D2001C7D2256002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Double_TimeTests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D2011C7D2256002C99CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1600D2001C7D2256002C99CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1600D2021C7D2256002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D2031C7D2256002C99CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array>
-				<string>1600D20C1C7D2256002C99CB</string>
-				<string>168EF90B1C7D664300AAFDFE</string>
-			</array>
-			<key>isa</key>
-			<string>PBXSourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1600D2041C7D2256002C99CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXFrameworksBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1600D2051C7D2256002C99CB</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXResourcesBuildPhase</string>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-		</dict>
-		<key>1600D2061C7D2256002C99CB</key>
-		<dict>
-			<key>buildConfigurationList</key>
-			<string>1600D2161C7D2256002C99CB</string>
-			<key>buildPhases</key>
-			<array>
-				<string>1600D2031C7D2256002C99CB</string>
-				<string>1600D2041C7D2256002C99CB</string>
-				<string>1600D2051C7D2256002C99CB</string>
-			</array>
-			<key>buildRules</key>
-			<array/>
-			<key>dependencies</key>
-			<array>
-				<string>1600D2091C7D2256002C99CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXNativeTarget</string>
-			<key>name</key>
-			<string>Double TimeUITests</string>
-			<key>productName</key>
-			<string>Double TimeUITests</string>
-			<key>productReference</key>
-			<string>1600D2071C7D2256002C99CB</string>
-			<key>productType</key>
-			<string>com.apple.product-type.bundle.ui-testing</string>
-		</dict>
-		<key>1600D2071C7D2256002C99CB</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.cfbundle</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Double TimeUITests.xctest</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>1600D2081C7D2256002C99CB</key>
-		<dict>
-			<key>containerPortal</key>
-			<string>1600D1E01C7D2255002C99CB</string>
-			<key>isa</key>
-			<string>PBXContainerItemProxy</string>
-			<key>proxyType</key>
-			<string>1</string>
-			<key>remoteGlobalIDString</key>
-			<string>1600D1E71C7D2255002C99CB</string>
-			<key>remoteInfo</key>
-			<string>Double Time</string>
-		</dict>
-		<key>1600D2091C7D2256002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXTargetDependency</string>
-			<key>target</key>
-			<string>1600D1E71C7D2255002C99CB</string>
-			<key>targetProxy</key>
-			<string>1600D2081C7D2256002C99CB</string>
-		</dict>
-		<key>1600D20A1C7D2256002C99CB</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>1600D20B1C7D2256002C99CB</string>
-				<string>1600D20D1C7D2256002C99CB</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>path</key>
-			<string>Double TimeUITests</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D20B1C7D2256002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Double_TimeUITests.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D20C1C7D2256002C99CB</key>
-		<dict>
-			<key>fileRef</key>
-			<string>1600D20B1C7D2256002C99CB</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>1600D20D1C7D2256002C99CB</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.plist.xml</string>
-			<key>path</key>
-			<string>Info.plist</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>1600D20E1C7D2256002C99CB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>ENABLE_TESTABILITY</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_DYNAMIC_NO_PIC</key>
-				<string>NO</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_OPTIMIZATION_LEVEL</key>
-				<string>0</string>
-				<key>GCC_PREPROCESSOR_DEFINITIONS</key>
-				<array>
-					<string>DEBUG=1</string>
-					<string>$(inherited)</string>
-				</array>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>YES</string>
-				<key>ONLY_ACTIVE_ARCH</key>
-				<string>YES</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>1600D20F1C7D2256002C99CB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>1600D2101C7D2256002C99CB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1600D2111C7D2256002C99CB</string>
-				<string>1600D2121C7D2256002C99CB</string>
-				<string>16B599C61CB2FABF0011DDDB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>1600D2111C7D2256002C99CB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>61215A5075DE703F5BC45B7E</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>BUNDLE_ID_SUFFIX</key>
-				<string>.dev</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Double Time/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>totallyviable.Double-Time</string>
-				<key>PRODUCT_NAME</key>
-				<string>&#128679;DoubleTime</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>Double Time/Double Time-Bridging-Header.h</string>
-				<key>SWIFT_OPTIMIZATION_LEVEL</key>
-				<string>-Onone</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>1600D2121C7D2256002C99CB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D98AC8D5E603245D64B990E5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>BUNDLE_ID_SUFFIX</key>
-				<string></string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Double Time/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>totallyviable.Double-Time</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>Double Time/Double Time-Bridging-Header.h</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>1600D2131C7D2256002C99CB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1600D2141C7D2256002C99CB</string>
-				<string>1600D2151C7D2256002C99CB</string>
-				<string>16B599C71CB2FABF0011DDDB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>1600D2141C7D2256002C99CB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Double TimeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>totallyviable.Double-TimeTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Double Time.app/Double Time</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>1600D2151C7D2256002C99CB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Double TimeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>totallyviable.Double-TimeTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Double Time.app/Double Time</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>1600D2161C7D2256002C99CB</key>
-		<dict>
-			<key>buildConfigurations</key>
-			<array>
-				<string>1600D2171C7D2256002C99CB</string>
-				<string>1600D2181C7D2256002C99CB</string>
-				<string>16B599C81CB2FABF0011DDDB</string>
-			</array>
-			<key>defaultConfigurationIsVisible</key>
-			<string>0</string>
-			<key>defaultConfigurationName</key>
-			<string>Release</string>
-			<key>isa</key>
-			<string>XCConfigurationList</string>
-		</dict>
-		<key>1600D2171C7D2256002C99CB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>Double TimeUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>totallyviable.Double-TimeUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Double Time</string>
-				<key>USES_XCTRUNNER</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Debug</string>
-		</dict>
-		<key>1600D2181C7D2256002C99CB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>Double TimeUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>totallyviable.Double-TimeUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Double Time</string>
-				<key>USES_XCTRUNNER</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Release</string>
-		</dict>
-		<key>16302F151C8FB5060087F26D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>audio.wav</string>
-			<key>path</key>
-			<string>done-sound-bottom.wav</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>16302F161C8FB5060087F26D</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>audio.wav</string>
-			<key>path</key>
-			<string>done-sound-top.wav</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>16302F171C8FB5060087F26D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>16302F151C8FB5060087F26D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>16302F181C8FB5060087F26D</key>
-		<dict>
-			<key>fileRef</key>
-			<string>16302F161C8FB5060087F26D</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>166F03081CB2E57C000FC973</key>
-		<dict>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.c.h</string>
-			<key>path</key>
-			<string>Double Time-Bridging-Header.h</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>168EF9081C7D664300AAFDFE</key>
-		<dict>
-			<key>fileEncoding</key>
-			<string>4</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>sourcecode.swift</string>
-			<key>path</key>
-			<string>Timer.swift</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>168EF9091C7D664300AAFDFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>168EF9081C7D664300AAFDFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>168EF90A1C7D664300AAFDFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>168EF9081C7D664300AAFDFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>168EF90B1C7D664300AAFDFE</key>
-		<dict>
-			<key>fileRef</key>
-			<string>168EF9081C7D664300AAFDFE</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-		<key>16B599C51CB2FABF0011DDDB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>ALWAYS_SEARCH_USER_PATHS</key>
-				<string>NO</string>
-				<key>CLANG_CXX_LANGUAGE_STANDARD</key>
-				<string>gnu++0x</string>
-				<key>CLANG_CXX_LIBRARY</key>
-				<string>libc++</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CLANG_ENABLE_OBJC_ARC</key>
-				<string>YES</string>
-				<key>CLANG_WARN_BOOL_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_CONSTANT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_DIRECT_OBJC_ISA_USAGE</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_EMPTY_BODY</key>
-				<string>YES</string>
-				<key>CLANG_WARN_ENUM_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_INT_CONVERSION</key>
-				<string>YES</string>
-				<key>CLANG_WARN_OBJC_ROOT_CLASS</key>
-				<string>YES_ERROR</string>
-				<key>CLANG_WARN_UNREACHABLE_CODE</key>
-				<string>YES</string>
-				<key>CLANG_WARN__DUPLICATE_METHOD_MATCH</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY[sdk=iphoneos*]</key>
-				<string>iPhone Developer</string>
-				<key>COPY_PHASE_STRIP</key>
-				<string>NO</string>
-				<key>DEBUG_INFORMATION_FORMAT</key>
-				<string>dwarf-with-dsym</string>
-				<key>ENABLE_NS_ASSERTIONS</key>
-				<string>NO</string>
-				<key>ENABLE_STRICT_OBJC_MSGSEND</key>
-				<string>YES</string>
-				<key>GCC_C_LANGUAGE_STANDARD</key>
-				<string>gnu99</string>
-				<key>GCC_NO_COMMON_BLOCKS</key>
-				<string>YES</string>
-				<key>GCC_WARN_64_TO_32_BIT_CONVERSION</key>
-				<string>YES</string>
-				<key>GCC_WARN_ABOUT_RETURN_TYPE</key>
-				<string>YES_ERROR</string>
-				<key>GCC_WARN_UNDECLARED_SELECTOR</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNINITIALIZED_AUTOS</key>
-				<string>YES_AGGRESSIVE</string>
-				<key>GCC_WARN_UNUSED_FUNCTION</key>
-				<string>YES</string>
-				<key>GCC_WARN_UNUSED_VARIABLE</key>
-				<string>YES</string>
-				<key>IPHONEOS_DEPLOYMENT_TARGET</key>
-				<string>9.2</string>
-				<key>MTL_ENABLE_DEBUG_INFO</key>
-				<string>NO</string>
-				<key>PRODUCT_NAME</key>
-				<string></string>
-				<key>SDKROOT</key>
-				<string>iphoneos</string>
-				<key>TARGETED_DEVICE_FAMILY</key>
-				<string>1,2</string>
-				<key>VALIDATE_PRODUCT</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Beta</string>
-		</dict>
-		<key>16B599C61CB2FABF0011DDDB</key>
-		<dict>
-			<key>baseConfigurationReference</key>
-			<string>D98AC8D5E603245D64B990E5</string>
-			<key>buildSettings</key>
-			<dict>
-				<key>ASSETCATALOG_COMPILER_APPICON_NAME</key>
-				<string>AppIcon</string>
-				<key>BUNDLE_ID_SUFFIX</key>
-				<string>.beta</string>
-				<key>CLANG_ENABLE_MODULES</key>
-				<string>YES</string>
-				<key>CODE_SIGN_IDENTITY</key>
-				<string>iPhone Developer</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Double Time/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>totallyviable.Double-Time</string>
-				<key>PRODUCT_NAME</key>
-				<string>&#127345;&#65039;DoubleTime</string>
-				<key>SWIFT_OBJC_BRIDGING_HEADER</key>
-				<string>Double Time/Double Time-Bridging-Header.h</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Beta</string>
-		</dict>
-		<key>16B599C71CB2FABF0011DDDB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>BUNDLE_LOADER</key>
-				<string>$(TEST_HOST)</string>
-				<key>INFOPLIST_FILE</key>
-				<string>Double TimeTests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>totallyviable.Double-TimeTests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_HOST</key>
-				<string>$(BUILT_PRODUCTS_DIR)/Double Time.app/Double Time</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Beta</string>
-		</dict>
-		<key>16B599C81CB2FABF0011DDDB</key>
-		<dict>
-			<key>buildSettings</key>
-			<dict>
-				<key>INFOPLIST_FILE</key>
-				<string>Double TimeUITests/Info.plist</string>
-				<key>LD_RUNPATH_SEARCH_PATHS</key>
-				<string>$(inherited) @executable_path/Frameworks @loader_path/Frameworks</string>
-				<key>PRODUCT_BUNDLE_IDENTIFIER</key>
-				<string>totallyviable.Double-TimeUITests</string>
-				<key>PRODUCT_NAME</key>
-				<string>$(TARGET_NAME)</string>
-				<key>TEST_TARGET_NAME</key>
-				<string>Double Time</string>
-				<key>USES_XCTRUNNER</key>
-				<string>YES</string>
-			</dict>
-			<key>isa</key>
-			<string>XCBuildConfiguration</string>
-			<key>name</key>
-			<string>Beta</string>
-		</dict>
-		<key>1F57169970C4A5AFE5384586</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>61215A5075DE703F5BC45B7E</string>
-				<string>D98AC8D5E603245D64B990E5</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Pods</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>233D604631AD3EF6688FB73F</key>
-		<dict>
-			<key>explicitFileType</key>
-			<string>wrapper.framework</string>
-			<key>includeInIndex</key>
-			<string>0</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>path</key>
-			<string>Pods_Double_Time.framework</string>
-			<key>sourceTree</key>
-			<string>BUILT_PRODUCTS_DIR</string>
-		</dict>
-		<key>2BBAD6DFE96D70B621F3DA83</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Copy Pods Resources</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Double Time/Pods-Double Time-resources.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>61215A5075DE703F5BC45B7E</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Double Time.debug.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Double Time/Pods-Double Time.debug.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>770EC6C2932B5BC8330CAA3D</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Check Pods Manifest.lock</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>diff "${PODS_ROOT}/../Podfile.lock" "${PODS_ROOT}/Manifest.lock" &gt; /dev/null
-if [[ $? != 0 ]] ; then
-    cat &lt;&lt; EOM
-error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.
-EOM
-    exit 1
-fi
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>8DFD2A9514699412643BDD2A</key>
-		<dict>
-			<key>children</key>
-			<array>
-				<string>233D604631AD3EF6688FB73F</string>
-			</array>
-			<key>isa</key>
-			<string>PBXGroup</string>
-			<key>name</key>
-			<string>Frameworks</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>C7A4A28D88C92604F003947A</key>
-		<dict>
-			<key>buildActionMask</key>
-			<string>2147483647</string>
-			<key>files</key>
-			<array/>
-			<key>inputPaths</key>
-			<array/>
-			<key>isa</key>
-			<string>PBXShellScriptBuildPhase</string>
-			<key>name</key>
-			<string>Embed Pods Frameworks</string>
-			<key>outputPaths</key>
-			<array/>
-			<key>runOnlyForDeploymentPostprocessing</key>
-			<string>0</string>
-			<key>shellPath</key>
-			<string>/bin/sh</string>
-			<key>shellScript</key>
-			<string>"${SRCROOT}/Pods/Target Support Files/Pods-Double Time/Pods-Double Time-frameworks.sh"
-</string>
-			<key>showEnvVarsInLog</key>
-			<string>0</string>
-		</dict>
-		<key>D98AC8D5E603245D64B990E5</key>
-		<dict>
-			<key>includeInIndex</key>
-			<string>1</string>
-			<key>isa</key>
-			<string>PBXFileReference</string>
-			<key>lastKnownFileType</key>
-			<string>text.xcconfig</string>
-			<key>name</key>
-			<string>Pods-Double Time.release.xcconfig</string>
-			<key>path</key>
-			<string>Pods/Target Support Files/Pods-Double Time/Pods-Double Time.release.xcconfig</string>
-			<key>sourceTree</key>
-			<string>&lt;group&gt;</string>
-		</dict>
-		<key>DAC0370A6ADC86B6AE8234C6</key>
-		<dict>
-			<key>fileRef</key>
-			<string>233D604631AD3EF6688FB73F</string>
-			<key>isa</key>
-			<string>PBXBuildFile</string>
-		</dict>
-	</dict>
-	<key>rootObject</key>
-	<string>1600D1E01C7D2255002C99CB</string>
-</dict>
-</plist>
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1600D1EC1C7D2255002C99CB /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600D1EB1C7D2255002C99CB /* AppDelegate.swift */; };
+		1600D1EE1C7D2255002C99CB /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600D1ED1C7D2255002C99CB /* ViewController.swift */; };
+		1600D1F11C7D2255002C99CB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1600D1EF1C7D2255002C99CB /* Main.storyboard */; };
+		1600D1F31C7D2255002C99CB /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1600D1F21C7D2255002C99CB /* Assets.xcassets */; };
+		1600D1F61C7D2255002C99CB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1600D1F41C7D2255002C99CB /* LaunchScreen.storyboard */; };
+		1600D2011C7D2256002C99CB /* Double_TimeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600D2001C7D2256002C99CB /* Double_TimeTests.swift */; };
+		1600D20C1C7D2256002C99CB /* Double_TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600D20B1C7D2256002C99CB /* Double_TimeUITests.swift */; };
+		16302F171C8FB5060087F26D /* done-sound-bottom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16302F151C8FB5060087F26D /* done-sound-bottom.wav */; };
+		16302F181C8FB5060087F26D /* done-sound-top.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16302F161C8FB5060087F26D /* done-sound-top.wav */; };
+		168EF9091C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
+		168EF90A1C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
+		168EF90B1C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
+		DAC0370A6ADC86B6AE8234C6 /* Pods_Double_Time.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 233D604631AD3EF6688FB73F /* Pods_Double_Time.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1600D1FD1C7D2256002C99CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1600D1E01C7D2255002C99CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1600D1E71C7D2255002C99CB;
+			remoteInfo = "Double Time";
+		};
+		1600D2081C7D2256002C99CB /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1600D1E01C7D2255002C99CB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1600D1E71C7D2255002C99CB;
+			remoteInfo = "Double Time";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1600D1E81C7D2255002C99CB /* 🚧DoubleTime.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "🚧DoubleTime.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1600D1EB1C7D2255002C99CB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1600D1ED1C7D2255002C99CB /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		1600D1F01C7D2255002C99CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1600D1F21C7D2255002C99CB /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1600D1F51C7D2255002C99CB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1600D1F71C7D2255002C99CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1600D1FC1C7D2256002C99CB /* Double TimeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Double TimeTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1600D2001C7D2256002C99CB /* Double_TimeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double_TimeTests.swift; sourceTree = "<group>"; };
+		1600D2021C7D2256002C99CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1600D2071C7D2256002C99CB /* Double TimeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Double TimeUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1600D20B1C7D2256002C99CB /* Double_TimeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double_TimeUITests.swift; sourceTree = "<group>"; };
+		1600D20D1C7D2256002C99CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		16302F151C8FB5060087F26D /* done-sound-bottom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "done-sound-bottom.wav"; sourceTree = "<group>"; };
+		16302F161C8FB5060087F26D /* done-sound-top.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "done-sound-top.wav"; sourceTree = "<group>"; };
+		166F03081CB2E57C000FC973 /* Double Time-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Double Time-Bridging-Header.h"; sourceTree = "<group>"; };
+		168EF9081C7D664300AAFDFE /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
+		233D604631AD3EF6688FB73F /* Pods_Double_Time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Double_Time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		61215A5075DE703F5BC45B7E /* Pods-Double Time.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Double Time.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Double Time/Pods-Double Time.debug.xcconfig"; sourceTree = "<group>"; };
+		D98AC8D5E603245D64B990E5 /* Pods-Double Time.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Double Time.release.xcconfig"; path = "Pods/Target Support Files/Pods-Double Time/Pods-Double Time.release.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1600D1E51C7D2255002C99CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DAC0370A6ADC86B6AE8234C6 /* Pods_Double_Time.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1600D1F91C7D2256002C99CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1600D2041C7D2256002C99CB /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1600D1DF1C7D2255002C99CB = {
+			isa = PBXGroup;
+			children = (
+				1600D1EA1C7D2255002C99CB /* Double Time */,
+				1600D1FF1C7D2256002C99CB /* Double TimeTests */,
+				1600D20A1C7D2256002C99CB /* Double TimeUITests */,
+				1600D1E91C7D2255002C99CB /* Products */,
+				1F57169970C4A5AFE5384586 /* Pods */,
+				8DFD2A9514699412643BDD2A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1600D1E91C7D2255002C99CB /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1600D1E81C7D2255002C99CB /* 🚧DoubleTime.app */,
+				1600D1FC1C7D2256002C99CB /* Double TimeTests.xctest */,
+				1600D2071C7D2256002C99CB /* Double TimeUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1600D1EA1C7D2255002C99CB /* Double Time */ = {
+			isa = PBXGroup;
+			children = (
+				1600D1EB1C7D2255002C99CB /* AppDelegate.swift */,
+				1600D1ED1C7D2255002C99CB /* ViewController.swift */,
+				16302F161C8FB5060087F26D /* done-sound-top.wav */,
+				16302F151C8FB5060087F26D /* done-sound-bottom.wav */,
+				168EF9081C7D664300AAFDFE /* Timer.swift */,
+				1600D1EF1C7D2255002C99CB /* Main.storyboard */,
+				1600D1F21C7D2255002C99CB /* Assets.xcassets */,
+				1600D1F41C7D2255002C99CB /* LaunchScreen.storyboard */,
+				1600D1F71C7D2255002C99CB /* Info.plist */,
+				166F03081CB2E57C000FC973 /* Double Time-Bridging-Header.h */,
+			);
+			path = "Double Time";
+			sourceTree = "<group>";
+		};
+		1600D1FF1C7D2256002C99CB /* Double TimeTests */ = {
+			isa = PBXGroup;
+			children = (
+				1600D2001C7D2256002C99CB /* Double_TimeTests.swift */,
+				1600D2021C7D2256002C99CB /* Info.plist */,
+			);
+			path = "Double TimeTests";
+			sourceTree = "<group>";
+		};
+		1600D20A1C7D2256002C99CB /* Double TimeUITests */ = {
+			isa = PBXGroup;
+			children = (
+				1600D20B1C7D2256002C99CB /* Double_TimeUITests.swift */,
+				1600D20D1C7D2256002C99CB /* Info.plist */,
+			);
+			path = "Double TimeUITests";
+			sourceTree = "<group>";
+		};
+		1F57169970C4A5AFE5384586 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				61215A5075DE703F5BC45B7E /* Pods-Double Time.debug.xcconfig */,
+				D98AC8D5E603245D64B990E5 /* Pods-Double Time.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		8DFD2A9514699412643BDD2A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				233D604631AD3EF6688FB73F /* Pods_Double_Time.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1600D1E71C7D2255002C99CB /* Double Time */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1600D2101C7D2256002C99CB /* Build configuration list for PBXNativeTarget "Double Time" */;
+			buildPhases = (
+				770EC6C2932B5BC8330CAA3D /* Check Pods Manifest.lock */,
+				1600D1E41C7D2255002C99CB /* Sources */,
+				1600D1E51C7D2255002C99CB /* Frameworks */,
+				1600D1E61C7D2255002C99CB /* Resources */,
+				C7A4A28D88C92604F003947A /* Embed Pods Frameworks */,
+				2BBAD6DFE96D70B621F3DA83 /* Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Double Time";
+			productName = "Double Time";
+			productReference = 1600D1E81C7D2255002C99CB /* 🚧DoubleTime.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1600D1FB1C7D2256002C99CB /* Double TimeTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1600D2131C7D2256002C99CB /* Build configuration list for PBXNativeTarget "Double TimeTests" */;
+			buildPhases = (
+				1600D1F81C7D2256002C99CB /* Sources */,
+				1600D1F91C7D2256002C99CB /* Frameworks */,
+				1600D1FA1C7D2256002C99CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1600D1FE1C7D2256002C99CB /* PBXTargetDependency */,
+			);
+			name = "Double TimeTests";
+			productName = "Double TimeTests";
+			productReference = 1600D1FC1C7D2256002C99CB /* Double TimeTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		1600D2061C7D2256002C99CB /* Double TimeUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1600D2161C7D2256002C99CB /* Build configuration list for PBXNativeTarget "Double TimeUITests" */;
+			buildPhases = (
+				1600D2031C7D2256002C99CB /* Sources */,
+				1600D2041C7D2256002C99CB /* Frameworks */,
+				1600D2051C7D2256002C99CB /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1600D2091C7D2256002C99CB /* PBXTargetDependency */,
+			);
+			name = "Double TimeUITests";
+			productName = "Double TimeUITests";
+			productReference = 1600D2071C7D2256002C99CB /* Double TimeUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1600D1E01C7D2255002C99CB /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0720;
+				ORGANIZATIONNAME = "Totally Viable";
+				TargetAttributes = {
+					1600D1E71C7D2255002C99CB = {
+						CreatedOnToolsVersion = 7.2.1;
+						DevelopmentTeam = H7BXRR563Q;
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
+					1600D1FB1C7D2256002C99CB = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 1600D1E71C7D2255002C99CB;
+					};
+					1600D2061C7D2256002C99CB = {
+						CreatedOnToolsVersion = 7.2.1;
+						TestTargetID = 1600D1E71C7D2255002C99CB;
+					};
+				};
+			};
+			buildConfigurationList = 1600D1E31C7D2255002C99CB /* Build configuration list for PBXProject "Double Time" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1600D1DF1C7D2255002C99CB;
+			productRefGroup = 1600D1E91C7D2255002C99CB /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1600D1E71C7D2255002C99CB /* Double Time */,
+				1600D1FB1C7D2256002C99CB /* Double TimeTests */,
+				1600D2061C7D2256002C99CB /* Double TimeUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1600D1E61C7D2255002C99CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				16302F171C8FB5060087F26D /* done-sound-bottom.wav in Resources */,
+				1600D1F61C7D2255002C99CB /* LaunchScreen.storyboard in Resources */,
+				1600D1F31C7D2255002C99CB /* Assets.xcassets in Resources */,
+				16302F181C8FB5060087F26D /* done-sound-top.wav in Resources */,
+				1600D1F11C7D2255002C99CB /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1600D1FA1C7D2256002C99CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1600D2051C7D2256002C99CB /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		2BBAD6DFE96D70B621F3DA83 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Double Time/Pods-Double Time-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		770EC6C2932B5BC8330CAA3D /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		C7A4A28D88C92604F003947A /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Double Time/Pods-Double Time-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1600D1E41C7D2255002C99CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168EF9091C7D664300AAFDFE /* Timer.swift in Sources */,
+				1600D1EE1C7D2255002C99CB /* ViewController.swift in Sources */,
+				1600D1EC1C7D2255002C99CB /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1600D1F81C7D2256002C99CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1600D2011C7D2256002C99CB /* Double_TimeTests.swift in Sources */,
+				168EF90A1C7D664300AAFDFE /* Timer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1600D2031C7D2256002C99CB /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1600D20C1C7D2256002C99CB /* Double_TimeUITests.swift in Sources */,
+				168EF90B1C7D664300AAFDFE /* Timer.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1600D1FE1C7D2256002C99CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1600D1E71C7D2255002C99CB /* Double Time */;
+			targetProxy = 1600D1FD1C7D2256002C99CB /* PBXContainerItemProxy */;
+		};
+		1600D2091C7D2256002C99CB /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1600D1E71C7D2255002C99CB /* Double Time */;
+			targetProxy = 1600D2081C7D2256002C99CB /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1600D1EF1C7D2255002C99CB /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1600D1F01C7D2255002C99CB /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1600D1F41C7D2255002C99CB /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1600D1F51C7D2255002C99CB /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1600D20E1C7D2256002C99CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1600D20F1C7D2256002C99CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1600D2111C7D2256002C99CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 61215A5075DE703F5BC45B7E /* Pods-Double Time.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				BUNDLE_ID_SUFFIX = .dev;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Double Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "totallyviable.Double-Time";
+				PRODUCT_NAME = "🚧DoubleTime";
+				SWIFT_OBJC_BRIDGING_HEADER = "Double Time/Double Time-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1600D2121C7D2256002C99CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98AC8D5E603245D64B990E5 /* Pods-Double Time.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				BUNDLE_ID_SUFFIX = "";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Double Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "totallyviable.Double-Time";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "Double Time/Double Time-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		1600D2141C7D2256002C99CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Double TimeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "totallyviable.Double-TimeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Double Time.app/Double Time";
+			};
+			name = Debug;
+		};
+		1600D2151C7D2256002C99CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Double TimeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "totallyviable.Double-TimeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Double Time.app/Double Time";
+			};
+			name = Release;
+		};
+		1600D2171C7D2256002C99CB /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Double TimeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "totallyviable.Double-TimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Double Time";
+				USES_XCTRUNNER = YES;
+			};
+			name = Debug;
+		};
+		1600D2181C7D2256002C99CB /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Double TimeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "totallyviable.Double-TimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Double Time";
+				USES_XCTRUNNER = YES;
+			};
+			name = Release;
+		};
+		16B599C51CB2FABF0011DDDB /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Beta;
+		};
+		16B599C61CB2FABF0011DDDB /* Beta */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D98AC8D5E603245D64B990E5 /* Pods-Double Time.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = "Brand Assets";
+				BUNDLE_ID_SUFFIX = .beta;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Double Time/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "totallyviable.Double-Time";
+				PRODUCT_NAME = "🅱️DoubleTime";
+				SWIFT_OBJC_BRIDGING_HEADER = "Double Time/Double Time-Bridging-Header.h";
+			};
+			name = Beta;
+		};
+		16B599C71CB2FABF0011DDDB /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "Double TimeTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "totallyviable.Double-TimeTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Double Time.app/Double Time";
+			};
+			name = Beta;
+		};
+		16B599C81CB2FABF0011DDDB /* Beta */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = "Double TimeUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "totallyviable.Double-TimeUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = "Double Time";
+				USES_XCTRUNNER = YES;
+			};
+			name = Beta;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1600D1E31C7D2255002C99CB /* Build configuration list for PBXProject "Double Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1600D20E1C7D2256002C99CB /* Debug */,
+				1600D20F1C7D2256002C99CB /* Release */,
+				16B599C51CB2FABF0011DDDB /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1600D2101C7D2256002C99CB /* Build configuration list for PBXNativeTarget "Double Time" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1600D2111C7D2256002C99CB /* Debug */,
+				1600D2121C7D2256002C99CB /* Release */,
+				16B599C61CB2FABF0011DDDB /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1600D2131C7D2256002C99CB /* Build configuration list for PBXNativeTarget "Double TimeTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1600D2141C7D2256002C99CB /* Debug */,
+				1600D2151C7D2256002C99CB /* Release */,
+				16B599C71CB2FABF0011DDDB /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1600D2161C7D2256002C99CB /* Build configuration list for PBXNativeTarget "Double TimeUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1600D2171C7D2256002C99CB /* Debug */,
+				1600D2181C7D2256002C99CB /* Release */,
+				16B599C81CB2FABF0011DDDB /* Beta */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1600D1E01C7D2255002C99CB /* Project object */;
+}
