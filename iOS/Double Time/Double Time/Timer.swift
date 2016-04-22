@@ -116,7 +116,7 @@ class Timer {
         let notification = UILocalNotification()
         notification.fireDate = NSDate(timeIntervalSinceNow: Double(self.duration))
         notification.alertBody = "Timer over: " + self.name
-        notification.soundName = self.doneSound.filename
+        notification.soundName = "\(self.doneSound.filename).\(self.doneSound.filetype)"
         notification.userInfo = ["TimerName": self.name]
         
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
