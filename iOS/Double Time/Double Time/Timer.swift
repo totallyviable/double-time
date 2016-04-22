@@ -14,6 +14,7 @@ let prefs = NSUserDefaults.standardUserDefaults()
 
 class AudioHelper: NSObject, AVAudioPlayerDelegate {
     var player: AVAudioPlayer?
+    var playbackMode: AVAudioSessionCategoryOptions!
     
     var filename: String
     var filetype = "wav"
@@ -27,7 +28,7 @@ class AudioHelper: NSObject, AVAudioPlayerDelegate {
         self.filetype = filetype
     }
     
-    private func setupAudioPlayerWithFile(filename: NSString, filetype: NSString) -> AVAudioPlayer?  {
+    func setupAudioPlayerWithFile(filename: NSString, filetype: NSString) -> AVAudioPlayer?  {
         let path = NSBundle.mainBundle().pathForResource(filename as String, ofType: filetype as String)
         let url = NSURL.fileURLWithPath(path!)
         
@@ -42,9 +43,11 @@ class AudioHelper: NSObject, AVAudioPlayerDelegate {
         return audioPlayer
     }
     
-    func initializeAudioPlayer() {
+    func initializeAudioPlayer(playbackMode: AVAudioSessionCategoryOptions = AVAudioSessionCategoryOptions.MixWithOthers) {
+        self.playbackMode = playbackMode
+        
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.DuckOthers)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: self.playbackMode)
         } catch {
             print("Could not set playback options to DuckOthers")
         }
@@ -54,28 +57,30 @@ class AudioHelper: NSObject, AVAudioPlayerDelegate {
     }
     
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {
-        print("Did finish playing")
+        print("Did finish playing: ", self.filename, ".", self.filetype)
         
         do {
-            try AVAudioSession.sharedInstance().setActive(false)
+//            try AVAudioSession.sharedInstance().setActive(false)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.MixWithOthers)
         } catch {
             print("AVAudioSession setActive(false) failed")
         }
     }
-    
     
     func stop() {
         self.player?.stop()
         self.player?.prepareToPlay()
     }
     
-    func play() {
+    func play(numberOfLoops: Int = 0) {
         do {
             try AVAudioSession.sharedInstance().setActive(true)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: self.playbackMode)
         } catch {
             print("AVAudioSession setActive(true) failed")
         }
         
+        self.player?.numberOfLoops = numberOfLoops
         self.player?.play()
     }
     
@@ -123,7 +128,7 @@ class Timer {
         self.duration = (prefs.integerForKey(name + "TimerDuration") != 0) ? prefs.integerForKey(name + "TimerDuration") : durationDefault
         
         self.doneSound = AudioHelper(filename: "done-sound-" + name)
-        self.doneSound.initializeAudioPlayer()
+        self.doneSound.initializeAudioPlayer(AVAudioSessionCategoryOptions.DuckOthers)
     }
 }
 

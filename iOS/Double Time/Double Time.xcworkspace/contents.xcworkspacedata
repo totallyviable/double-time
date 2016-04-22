@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Double Time/1sec.mp3">
+   </FileRef>
+   <FileRef
       location = "group:Double Time.xcodeproj">
    </FileRef>
    <FileRef

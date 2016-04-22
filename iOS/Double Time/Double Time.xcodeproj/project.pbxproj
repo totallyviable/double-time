@@ -16,6 +16,7 @@
 		1600D20C1C7D2256002C99CB /* Double_TimeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1600D20B1C7D2256002C99CB /* Double_TimeUITests.swift */; };
 		16302F171C8FB5060087F26D /* done-sound-bottom.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16302F151C8FB5060087F26D /* done-sound-bottom.wav */; };
 		16302F181C8FB5060087F26D /* done-sound-top.wav in Resources */ = {isa = PBXBuildFile; fileRef = 16302F161C8FB5060087F26D /* done-sound-top.wav */; };
+		16674D361CCAC7E00005B790 /* 1sec.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 16674D351CCAC7E00005B790 /* 1sec.mp3 */; };
 		168EF9091C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
 		168EF90A1C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
 		168EF90B1C7D664300AAFDFE /* Timer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 168EF9081C7D664300AAFDFE /* Timer.swift */; };
@@ -55,6 +56,7 @@
 		1600D20D1C7D2256002C99CB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		16302F151C8FB5060087F26D /* done-sound-bottom.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "done-sound-bottom.wav"; sourceTree = "<group>"; };
 		16302F161C8FB5060087F26D /* done-sound-top.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = "done-sound-top.wav"; sourceTree = "<group>"; };
+		16674D351CCAC7E00005B790 /* 1sec.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = 1sec.mp3; sourceTree = "<group>"; };
 		166F03081CB2E57C000FC973 /* Double Time-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Double Time-Bridging-Header.h"; sourceTree = "<group>"; };
 		168EF9081C7D664300AAFDFE /* Timer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Timer.swift; sourceTree = "<group>"; };
 		233D604631AD3EF6688FB73F /* Pods_Double_Time.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Double_Time.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -117,6 +119,7 @@
 				1600D1ED1C7D2255002C99CB /* ViewController.swift */,
 				16302F161C8FB5060087F26D /* done-sound-top.wav */,
 				16302F151C8FB5060087F26D /* done-sound-bottom.wav */,
+				16674D351CCAC7E00005B790 /* 1sec.mp3 */,
 				168EF9081C7D664300AAFDFE /* Timer.swift */,
 				1600D1EF1C7D2255002C99CB /* Main.storyboard */,
 				1600D1F21C7D2255002C99CB /* Assets.xcassets */,
@@ -275,6 +278,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				16674D361CCAC7E00005B790 /* 1sec.mp3 in Resources */,
 				16302F171C8FB5060087F26D /* done-sound-bottom.wav in Resources */,
 				1600D1F61C7D2255002C99CB /* LaunchScreen.storyboard in Resources */,
 				1600D1F31C7D2255002C99CB /* Assets.xcassets in Resources */,

@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+import AVFoundation
 
 class ViewController: UIViewController {
     
@@ -31,6 +32,8 @@ class ViewController: UIViewController {
     var resetTimerInterval = NSTimer()
     var resetTimerActiveTimer: Timer!
     var resetTimerCount = 0.0
+    
+    var bufferSound: AudioHelper!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -57,6 +60,13 @@ class ViewController: UIViewController {
         drawProgressBar(bottomTimer)
         
         startGlobalTimer()
+        
+        
+        
+        bufferSound = AudioHelper(filename: "1sec", filetype: "mp3")
+        bufferSound.initializeAudioPlayer()
+        
+        bufferSound.play(-1)
     }
     
     func willResignActive(notification: NSNotification) {
