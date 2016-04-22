@@ -22,6 +22,11 @@ class AudioHelper: NSObject, AVAudioPlayerDelegate {
         self.filename = filename
     }
     
+    init(filename: String, filetype: String) {
+        self.filename = filename
+        self.filetype = filetype
+    }
+    
     private func setupAudioPlayerWithFile(filename: NSString, filetype: NSString) -> AVAudioPlayer?  {
         let path = NSBundle.mainBundle().pathForResource(filename as String, ofType: filetype as String)
         let url = NSURL.fileURLWithPath(path!)
@@ -39,12 +44,13 @@ class AudioHelper: NSObject, AVAudioPlayerDelegate {
     
     func initializeAudioPlayer() {
         do {
-            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.MixWithOthers)
+            try AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, withOptions: AVAudioSessionCategoryOptions.DuckOthers)
         } catch {
             print("Could not set playback options to DuckOthers")
         }
         
         self.player = setupAudioPlayerWithFile(self.filename, filetype: self.filetype)
+        self.player!.delegate = self
     }
     
     func audioPlayerDidFinishPlaying(player: AVAudioPlayer, successfully flag: Bool) {

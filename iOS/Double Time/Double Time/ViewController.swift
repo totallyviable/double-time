@@ -222,6 +222,8 @@ class ViewController: UIViewController {
         let (h,m,s) = secondsToHoursMinutesSeconds(seconds)
         
         timer.progressLabel.text = "\(h):\(m):\(s)"
+        
+        print(timer.name, " - ", seconds)
     }
     
     func resetTimer(timer: Timer) {
