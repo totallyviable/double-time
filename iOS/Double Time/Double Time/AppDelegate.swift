@@ -12,14 +12,23 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var vc = ViewController()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        
         BuddyBuildSDK.setup()
-        
         return true
+    }
+    
+    // play doneSound while app is still in foreground
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        if let userInfo = notification.userInfo {
+            let timerName = userInfo["TimerName"] as! String
+            let timer = timerName == "top" ? vc.topTimer : vc.bottomTimer
+            
+            timer.doneSound.play()
+            
+            print("didReceiveLocalNotification: \(timerName)")
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {

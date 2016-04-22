@@ -56,19 +56,28 @@ class ViewController: UIViewController {
         drawProgressBar(topTimer)
         drawProgressBar(bottomTimer)
         
+        registerLocalNotifications()
+        
         startGlobalTimer()
     }
     
     func willResignActive(notification: NSNotification) {
         resetProgressBar(activeTimer.progressBar)
+        print ("will resign active")
     }
     
     func didBecomeActive(notification: NSNotification) {
+        print ("did become active")
         UIView.animateWithDuration(20.0, delay: 0, options: [UIViewAnimationOptions.BeginFromCurrentState], animations: {() -> Void in
             let imageView = self.activeTimer.progressBar
             imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, imageView.superview!.frame.width, imageView.frame.height)
         }, completion: { _ in })
 
+    }
+    
+    func registerLocalNotifications() {
+        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
     }
     
     @IBAction func handleBarALongPress(sender: AnyObject) {
@@ -119,6 +128,8 @@ class ViewController: UIViewController {
         timer.duration = Int(duration)!
         
         prefs.setInteger(timer.duration, forKey: timer.name + "TimerDuration")
+        
+        timer.removeLocalNotification()
         
         activeTimer = nil
         
@@ -195,8 +206,6 @@ class ViewController: UIViewController {
         if (globalTimerSecondsElapsed == activeTimer.duration) {
             globalTimerSecondsElapsed = 0
             
-            activeTimer.doneSound.play()
-            
             resetTimer(activeTimer)
             
             toggleActiveTimer()
@@ -247,6 +256,8 @@ class ViewController: UIViewController {
         activeTimer.progressLabel.textColor = Timer.textColorActive
         
         animateProgressBar(activeTimer.progressBar, duration: Double(activeTimer.duration))
+        
+        activeTimer.scheduleLocalNotification()
     }
 }
 
