@@ -106,7 +106,7 @@ class Timer {
         self.setupTimerForName(name)
     }
     
-    func scheduleLocalNotification() {
+    func scheduleLocalNotification(fireDate: NSDate) {
         guard let settings = UIApplication.sharedApplication().currentUserNotificationSettings() else { return }
         
         if settings.types == .None {
@@ -114,13 +114,13 @@ class Timer {
         }
         
         let notification = UILocalNotification()
-        notification.fireDate = NSDate(timeIntervalSinceNow: Double(self.duration))
+        notification.fireDate = fireDate
         notification.alertBody = "Timer over: " + self.name
         notification.soundName = "\(self.doneSound.filename).\(self.doneSound.filetype)"
         notification.userInfo = ["TimerName": self.name]
         
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
-        self.localNotification = notification
+        self.localNotification = notification // TODO: fix
     }
     
     func removeLocalNotification() {

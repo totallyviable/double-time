@@ -188,6 +188,25 @@ class ViewController: UIViewController {
         // prefill timers with full values
         updateText(topTimer, seconds: topTimer.duration)
         updateText(bottomTimer, seconds: bottomTimer.duration)
+        
+        // schedule max notifs
+        scheduleFutureNotifications()
+    }
+    
+    func scheduleFutureNotifications() {
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        
+        var durationSum = 0
+        
+        for _ in 0...30 {
+            durationSum += topTimer.duration
+            topTimer.scheduleLocalNotification(NSDate(timeIntervalSinceNow: Double(durationSum)))
+            
+            durationSum += bottomTimer.duration
+            bottomTimer.scheduleLocalNotification(NSDate(timeIntervalSinceNow: Double(durationSum)))
+        }
+        
+        // TODO: schedule final notif to warn user and offer to reschedule again
     }
     
     func stopGlobalTimer() {
@@ -198,6 +217,8 @@ class ViewController: UIViewController {
         
         resetProgressBar(topTimer.progressBar)
         resetProgressBar(bottomTimer.progressBar)
+        
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
     }
     
     func globalTimerSelector() {
@@ -259,7 +280,7 @@ class ViewController: UIViewController {
         
         animateProgressBar(activeTimer.progressBar, duration: Double(activeTimer.duration))
         
-        activeTimer.scheduleLocalNotification()
+//        activeTimer.scheduleLocalNotification()
     }
 }
 
