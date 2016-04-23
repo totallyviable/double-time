@@ -63,11 +63,17 @@ class ViewController: UIViewController {
     
     func willResignActive(notification: NSNotification) {
         resetProgressBar(activeTimer.progressBar)
+        
+        scheduleFutureNotifications()
+        
         print ("will resign active")
     }
     
     func didBecomeActive(notification: NSNotification) {
         print ("did become active")
+        
+        cancelFutureNotifications()
+        
         UIView.animateWithDuration(20.0, delay: 0, options: [UIViewAnimationOptions.BeginFromCurrentState], animations: {() -> Void in
             let imageView = self.activeTimer.progressBar
             imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, imageView.superview!.frame.width, imageView.frame.height)
@@ -186,14 +192,18 @@ class ViewController: UIViewController {
         // prefill timers with full values
         updateText(topTimer, seconds: topTimer.duration)
         updateText(bottomTimer, seconds: bottomTimer.duration)
-        
-        // schedule max notifs
-        scheduleFutureNotifications()
+    }
+    
+    func cancelFutureNotifications() {
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        print ("canceled all future notifications")
     }
     
     func scheduleFutureNotifications() {
-        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        // clear any existing notifications
+        cancelFutureNotifications()
         
+        // TODO: take into account currently-active timer
         var durationSum = 0
         
         for _ in 0...30 {
@@ -205,6 +215,8 @@ class ViewController: UIViewController {
         }
         
         // TODO: schedule final notif to warn user and offer to reschedule again
+        
+        print("scheduled future notifications")
     }
     
     func stopGlobalTimer() {
@@ -216,7 +228,7 @@ class ViewController: UIViewController {
         resetProgressBar(topTimer.progressBar)
         resetProgressBar(bottomTimer.progressBar)
         
-        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        cancelFutureNotifications()
     }
     
     func globalTimerSelector() {
@@ -224,6 +236,8 @@ class ViewController: UIViewController {
         
         if (globalTimerSecondsElapsed == activeTimer.duration) {
             globalTimerSecondsElapsed = 0
+            
+            activeTimer.doneSound.play()
             
             resetTimer(activeTimer)
             

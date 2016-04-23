@@ -19,14 +19,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         return true
     }
     
-    // play doneSound while app is still in foreground
     func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
         if let userInfo = notification.userInfo {
             let timerName = userInfo["TimerName"] as! String
-            let timer = timerName == "top" ? vc.topTimer : vc.bottomTimer
-            
-            timer.doneSound.play()
-            
             print("didReceiveLocalNotification: \(timerName)")
         }
     }
@@ -47,6 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        
     }
 
     func applicationWillTerminate(application: UIApplication) {
