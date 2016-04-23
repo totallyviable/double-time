@@ -129,8 +129,6 @@ class ViewController: UIViewController {
         
         prefs.setInteger(timer.duration, forKey: timer.name + "TimerDuration")
         
-        timer.removeLocalNotification()
-        
         activeTimer = nil
         
         self.startGlobalTimer()
@@ -279,8 +277,6 @@ class ViewController: UIViewController {
         activeTimer.progressLabel.textColor = Timer.textColorActive
         
         animateProgressBar(activeTimer.progressBar, duration: Double(activeTimer.duration))
-        
-//        activeTimer.scheduleLocalNotification()
     }
 }
 

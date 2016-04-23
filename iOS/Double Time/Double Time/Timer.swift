@@ -93,7 +93,6 @@ class Timer {
     var progressBarColor: UIColor!
     
     var doneSound: AudioHelper!
-    var localNotification: UILocalNotification?
     
     static var textColorInactive = UIColor(red: 0.4, green: 0.384314, blue: 0.341176, alpha: 1.0)
     static var textColorActive = UIColor.whiteColor()
@@ -120,13 +119,6 @@ class Timer {
         notification.userInfo = ["TimerName": self.name]
         
         UIApplication.sharedApplication().scheduleLocalNotification(notification)
-        self.localNotification = notification // TODO: fix
-    }
-    
-    func removeLocalNotification() {
-        guard let notification = self.localNotification else { return }
-        
-        UIApplication.sharedApplication().cancelLocalNotification(notification)
     }
     
     // MARK: private
