@@ -12,14 +12,18 @@ import UIKit
 class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
-
+    var vc = ViewController()
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: [NSObject: AnyObject]?) -> Bool {
-        // Override point for customization after application launch.
-        
         BuddyBuildSDK.setup()
-        
         return true
+    }
+    
+    func application(application: UIApplication, didReceiveLocalNotification notification: UILocalNotification) {
+        if let userInfo = notification.userInfo {
+            let timerName = userInfo["TimerName"] as! String
+            print("didReceiveLocalNotification: \(timerName)")
+        }
     }
 
     func applicationWillResignActive(application: UIApplication) {
@@ -38,6 +42,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func applicationDidBecomeActive(application: UIApplication) {
         // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
+        
+        
     }
 
     func applicationWillTerminate(application: UIApplication) {

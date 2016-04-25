@@ -56,19 +56,34 @@ class ViewController: UIViewController {
         drawProgressBar(topTimer)
         drawProgressBar(bottomTimer)
         
+        registerLocalNotifications()
+        
         startGlobalTimer()
     }
     
     func willResignActive(notification: NSNotification) {
         resetProgressBar(activeTimer.progressBar)
+        
+        scheduleFutureNotifications()
+        
+        print ("will resign active")
     }
     
     func didBecomeActive(notification: NSNotification) {
+        print ("did become active")
+        
+        cancelFutureNotifications()
+        
         UIView.animateWithDuration(20.0, delay: 0, options: [UIViewAnimationOptions.BeginFromCurrentState], animations: {() -> Void in
             let imageView = self.activeTimer.progressBar
             imageView.frame = CGRectMake(imageView.frame.origin.x, imageView.frame.origin.y, imageView.superview!.frame.width, imageView.frame.height)
         }, completion: { _ in })
 
+    }
+    
+    func registerLocalNotifications() {
+        let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
+        UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
     }
     
     @IBAction func handleBarALongPress(sender: AnyObject) {
@@ -179,6 +194,31 @@ class ViewController: UIViewController {
         updateText(bottomTimer, seconds: bottomTimer.duration)
     }
     
+    func cancelFutureNotifications() {
+        UIApplication.sharedApplication().cancelAllLocalNotifications()
+        print ("canceled all future notifications")
+    }
+    
+    func scheduleFutureNotifications() {
+        // clear any existing notifications
+        cancelFutureNotifications()
+        
+        // TODO: take into account currently-active timer
+        var durationSum = 0
+        
+        for _ in 0...30 {
+            durationSum += topTimer.duration
+            topTimer.scheduleLocalNotification(NSDate(timeIntervalSinceNow: Double(durationSum)))
+            
+            durationSum += bottomTimer.duration
+            bottomTimer.scheduleLocalNotification(NSDate(timeIntervalSinceNow: Double(durationSum)))
+        }
+        
+        // TODO: schedule final notif to warn user and offer to reschedule again
+        
+        print("scheduled future notifications")
+    }
+    
     func stopGlobalTimer() {
         UIApplication.sharedApplication().idleTimerDisabled = false
         
@@ -187,6 +227,8 @@ class ViewController: UIViewController {
         
         resetProgressBar(topTimer.progressBar)
         resetProgressBar(bottomTimer.progressBar)
+        
+        cancelFutureNotifications()
     }
     
     func globalTimerSelector() {
