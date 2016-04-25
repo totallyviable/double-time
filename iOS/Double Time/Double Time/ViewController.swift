@@ -17,7 +17,7 @@ class ViewController: UIViewController {
         
     @IBOutlet weak var barAProgressBar: UIImageView!
     @IBOutlet weak var barBProgressBar: UIImageView!
-    
+
     let prefs = NSUserDefaults.standardUserDefaults()
     
     var globalTimer = NSTimer()
@@ -64,7 +64,9 @@ class ViewController: UIViewController {
     func willResignActive(notification: NSNotification) {
         resetProgressBar(activeTimer.progressBar)
         
-        scheduleFutureNotifications()
+        if (prefs.boolForKey("ScheduleFutureNotifications") == true) {
+            scheduleFutureNotifications()
+        }
         
         print ("will resign active")
     }
@@ -84,6 +86,10 @@ class ViewController: UIViewController {
     func registerLocalNotifications() {
         let notificationSettings = UIUserNotificationSettings(forTypes: [.Alert, .Badge, .Sound], categories: nil)
         UIApplication.sharedApplication().registerUserNotificationSettings(notificationSettings)
+    }
+    
+    @IBAction func OnOffSwitch(sender: AnyObject) {
+        prefs.setBool(sender.on, forKey: "ScheduleFutureNotifications")
     }
     
     @IBAction func handleBarALongPress(sender: AnyObject) {
